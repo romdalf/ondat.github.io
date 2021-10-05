@@ -24,7 +24,7 @@
 <meta property="og:description" content="Use an external Etcd cluster Ondat uses the etcd distributed key-value store to store essential cluster metadata and manage distributed configuration state. For production environments and testing of production workloads, we recommend deploying an external etcd cluster. For more details about, and an example of, how to run etcd, see the External etcd Operations page.
 It is highly recommended to use external etcd for cloud environments and place the etcd cluster on stable nodes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2/docs/best-practices/" />
+<meta property="og:url" content="https://docs.ondat.io/v2/docs/best-practices/" />
 
 <meta itemprop="name" content="Ondat Best Practices">
 <meta itemprop="description" content="Use an external Etcd cluster Ondat uses the etcd distributed key-value store to store essential cluster metadata and manage distributed configuration state. For production environments and testing of production workloads, we recommend deploying an external etcd cluster. For more details about, and an example of, how to run etcd, see the External etcd Operations page.
@@ -1089,14 +1089,14 @@ It is highly recommended to use external etcd for cloud environments and place t
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2/docs/best-practices/">Best Practices</a>
+	<a href="https://docs.ondat.io/v2/docs/best-practices/">Best Practices</a>
 </li>
 
 	</ol>
@@ -1119,7 +1119,7 @@ recycled often might affect the normal operations of Ondat.</p>
 <p>We recommend creating a separate filesystem for Ondat to mitigate the risk
 of filling the root filesystem on nodes. This has to be done for each node in
 the cluster.</p>
-<p>Follow the <a href="https://ondat.github.io/v2/docs/operations/managing-host-storage/">managing host storage</a> best practices page for more
+<p>Follow the <a href="https://docs.ondat.io/v2/docs/operations/managing-host-storage/">managing host storage</a> best practices page for more
 details.</p>
 <h2 id="resource-reservations">Resource reservations</h2>
 <p>Ondat resource consumption depends on the workloads and the Ondat
@@ -1174,7 +1174,7 @@ define Ondat pools based on node selectors to collocate volumes.</p>
 <p>Losing a few nodes at the same time could cause the loss of data even when
 volume replicas are being used.</p>
 <h2 id="port-blocking">Port blocking</h2>
-<p>Ondat exposes ports to operate. It is recommended that the <a href="https://ondat.github.io/v2/docs/prerequisites/firewalls/">ports</a> are not accessible from outside
+<p>Ondat exposes ports to operate. It is recommended that the <a href="https://docs.ondat.io/v2/docs/prerequisites/firewalls/">ports</a> are not accessible from outside
 the scope of your cluster.</p>
 <h2 id="ondat-in-docker-ee">Ondat in Docker EE</h2>
 <p>Ondat does not support running on Swarm nodes nor on mixed (Kubernetes and

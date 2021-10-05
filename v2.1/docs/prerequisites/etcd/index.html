@@ -25,7 +25,7 @@
 We do not support using the Kubernetes etcd for Ondat installations.
 We provide two methods for installing etcd. For those looking for a quick route to evaluating Ondat, our first method installs etcd into your Kubernetes cluster using the CoreOS operator. Due to limitations in the CoreOS operator, this installation is not backed by any persistent storage, and therefore is unsuitable for production installations." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.1/docs/prerequisites/etcd/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.1/docs/prerequisites/etcd/" />
 
 <meta itemprop="name" content="Etcd">
 <meta itemprop="description" content="Ondat requires an etcd cluster in order to function. For more information on why etcd is required please see our etcd concepts page.
@@ -145,7 +145,7 @@ We provide two methods for installing etcd. For those looking for a quick route 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -293,7 +293,7 @@ We provide two methods for installing etcd. For those looking for a quick route 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -1094,21 +1094,21 @@ We provide two methods for installing etcd. For those looking for a quick route 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.1/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.1/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.1/docs/prerequisites/">Prerequisites</a>
+	<a href="https://docs.ondat.io/v2.1/docs/prerequisites/">Prerequisites</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.1/docs/prerequisites/etcd/">Etcd</a>
+	<a href="https://docs.ondat.io/v2.1/docs/prerequisites/etcd/">Etcd</a>
 </li>
 
 	</ol>
@@ -1119,7 +1119,7 @@ We provide two methods for installing etcd. For those looking for a quick route 
 	<h1>Etcd</h1>
 	
 	<p>Ondat requires an etcd cluster in order to function. For more information
-on why etcd is required please see our <a href="https://ondat.github.io/v2.1/docs/concepts/etcd/">etcd concepts</a> page.</p>
+on why etcd is required please see our <a href="https://docs.ondat.io/v2.1/docs/concepts/etcd/">etcd concepts</a> page.</p>
 <p>We do not support using the Kubernetes etcd for Ondat installations.</p>
 <p>We provide two methods for installing etcd. For those looking for a quick route
 to evaluating Ondat, our first method installs etcd into your Kubernetes
@@ -1207,7 +1207,7 @@ after a failure of etcd, contact the Ondat support team.</p>
 <p>For a one command install, the following script uses <code>kubectl</code> to create an
 etcd cluster in the <code>storageos-etcd</code> namespace. It requires kubectl in the
 system path, and the context set to the appropriate cluster.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s https://ondat.github.io/v2.1/sh/deploy-etcd.sh <span style="color:#000;font-weight:bold">|</span> bash
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s https://docs.ondat.io/v2.1/sh/deploy-etcd.sh <span style="color:#000;font-weight:bold">|</span> bash
 </code></pre></div><h3 id="installation-step-by-step">Installation Step by Step</h3>
 <p>For those who would prefer to execute the steps by themselves, they are as
 follows:</p>
@@ -1562,7 +1562,7 @@ $ <span style="color:#000">ETCDCTL_API</span><span style="color:#ce5c00;font-wei
 17e7256953f9319b, started, etcd-gjr25s4sdr, http://172.28.0.2:2380, http://172.28.0.2:2379
 8b698843a4658823, started, etcd-rqdf9thx5p, http://172.28.0.3:2380, http://172.28.0.3:2379
 </code></pre></div><blockquote>
-<p>Read the <a href="https://ondat.github.io/v2.1/docs/operations/etcd/">etcd operations</a>
+<p>Read the <a href="https://docs.ondat.io/v2.1/docs/operations/etcd/">etcd operations</a>
 page for our etcd recommendations.</p>
 </blockquote>
 </li>
@@ -1682,7 +1682,7 @@ of etcd from Prometheus easier.</p>
 <h2 id="using-etcd-with-ondat">Using Etcd with Ondat</h2>
 <p>During installation of Ondat the <code>kvBackend.address</code> parameter of the Ondat
 operator is used to specify the address of the etcd cluster. See the
-<a href="https://ondat.github.io/v2.1/docs/reference/cluster-operator/examples/#installing-with-an-external-etcd">Ondat cluster operator configuration</a> examples for more information.</p>
+<a href="https://docs.ondat.io/v2.1/docs/reference/cluster-operator/examples/#installing-with-an-external-etcd">Ondat cluster operator configuration</a> examples for more information.</p>
 
 	
 	

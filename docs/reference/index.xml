@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Reference</title>
-    <link>https://ondat.github.io/docs/reference/</link>
+    <link>https://docs.ondat.io/docs/reference/</link>
     <description>Recent content in Reference on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://ondat.github.io/docs/reference/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.ondat.io/docs/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Bundles</title>
-      <link>https://ondat.github.io/docs/reference/bundles/</link>
+      <link>https://docs.ondat.io/docs/reference/bundles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/bundles/</guid>
+      <guid>https://docs.ondat.io/docs/reference/bundles/</guid>
       <description>
         
         
@@ -28,10 +28,10 @@
     
     <item>
       <title>Docs: API Reference</title>
-      <link>https://ondat.github.io/docs/reference/api/</link>
+      <link>https://docs.ondat.io/docs/reference/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/api/</guid>
+      <guid>https://docs.ondat.io/docs/reference/api/</guid>
       <description>
         
         
@@ -57,10 +57,10 @@ window.onload = function() {
     
     <item>
       <title>Docs: Command line interface</title>
-      <link>https://ondat.github.io/docs/reference/cli/</link>
+      <link>https://docs.ondat.io/docs/reference/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/cli/</guid>
+      <guid>https://docs.ondat.io/docs/reference/cli/</guid>
       <description>
         
         
@@ -265,10 +265,10 @@ that are passed to &lt;code&gt;--output&lt;/code&gt; are &amp;lsquo;json&amp;rsq
     
     <item>
       <title>Docs: Cluster Operator</title>
-      <link>https://ondat.github.io/docs/reference/cluster-operator/</link>
+      <link>https://docs.ondat.io/docs/reference/cluster-operator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/cluster-operator/</guid>
+      <guid>https://docs.ondat.io/docs/reference/cluster-operator/</guid>
       <description>
         
         
@@ -296,10 +296,10 @@ repository&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: Contributing to the docs</title>
-      <link>https://ondat.github.io/docs/reference/contributing/</link>
+      <link>https://docs.ondat.io/docs/reference/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/contributing/</guid>
+      <guid>https://docs.ondat.io/docs/reference/contributing/</guid>
       <description>
         
         
@@ -345,21 +345,21 @@ payment.&lt;/p&gt;
     
     <item>
       <title>Docs: Encryption</title>
-      <link>https://ondat.github.io/docs/reference/encryption/</link>
+      <link>https://docs.ondat.io/docs/reference/encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/encryption/</guid>
+      <guid>https://docs.ondat.io/docs/reference/encryption/</guid>
       <description>
         
         
         &lt;p&gt;Ondat supports encryption for data-at-rest and data-in-transit.&lt;/p&gt;
 &lt;p&gt;Data-in-transit is data as it is travelling between nodes. It is encrypted by
-default with mTLS. Data-at-rest is the data stored in your volumes as &lt;a href=&#34;https://ondat.github.io/docs/concepts/volumes/&#34;&gt; blob
+default with mTLS. Data-at-rest is the data stored in your volumes as &lt;a href=&#34;https://docs.ondat.io/docs/concepts/volumes/&#34;&gt; blob
 files&lt;/a&gt;. Encryption of these blob files
 is optional and can be enabled by adding a label to your volume definitions
 before they&amp;rsquo;re provisioned.&lt;/p&gt;
 &lt;p&gt;For information on how to enable encryption on your volumes, please see our
-&lt;a href=&#34;https://ondat.github.io/docs/operations/encryption/&#34;&gt;Encryption Operations&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://docs.ondat.io/docs/operations/encryption/&#34;&gt;Encryption Operations&lt;/a&gt; page.&lt;/p&gt;
 &lt;h2 id=&#34;how-volumes-are-encrypted&#34;&gt;How volumes are encrypted&lt;/h2&gt;
 &lt;p&gt;Volumes are encrypted using AES-256 in the XTS-AES mode with 512-bit keys, as
 specified by IEEE Standard 1619-2007. There is a non-zero performance impact of
@@ -367,7 +367,7 @@ using encrypted volumes. A 10-25% cost in read/write throughput can be
 expected from XTS-AES, dependent on workload. Thin provisioning still applies
 to encrypted volumes.&lt;/p&gt;
 &lt;h2 id=&#34;encryption-key-generation&#34;&gt;Encryption Key Generation&lt;/h2&gt;
-&lt;p&gt;On PVC creation, &lt;a href=&#34;https://ondat.github.io/docs/reference/labels/#storageos-volume-labels&#34;&gt;if encryption is enabled&lt;/a&gt;, Ondat will
+&lt;p&gt;On PVC creation, &lt;a href=&#34;https://docs.ondat.io/docs/reference/labels/#storageos-volume-labels&#34;&gt;if encryption is enabled&lt;/a&gt;, Ondat will
 automatically generate up to two keys as Kubernetes secrets. Both keys are
 stored in the same namespace as the PVC.&lt;/p&gt;
 &lt;p&gt;Firstly, if it doesn&amp;rsquo;t already exist, a namespace key is generated. It is
@@ -420,7 +420,7 @@ encryption scheme.&lt;/p&gt;
 with Ondat encryption key management using the standard Kubernetes API and
 Kubernetes KMS provider framework. The below figure provides an overview of the
 process.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/kms-key-management.png&#34; alt=&#34;KMS Key Management&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/kms-key-management.png&#34; alt=&#34;KMS Key Management&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The KMS plugin is deployed within the Kubernetes cluster.&lt;/li&gt;
 &lt;li&gt;The KMS plugin is configured to act as a broker between the Kubernetes API
@@ -441,10 +441,10 @@ offering.&lt;/p&gt;
     
     <item>
       <title>Docs: Graphical user interface (GUI)</title>
-      <link>https://ondat.github.io/docs/reference/gui/</link>
+      <link>https://docs.ondat.io/docs/reference/gui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/gui/</guid>
+      <guid>https://docs.ondat.io/docs/reference/gui/</guid>
       <description>
         
         
@@ -456,31 +456,31 @@ from the &lt;code&gt;storageos-api&lt;/code&gt; Secret. By default &lt;code&gt;s
 &lt;p&gt;You can access the GUI by either port-forwarding with kubectl or using an
 Ingress rule. i.e &lt;code&gt;kubectl -n kube-system port-forward svc/storageos 5705&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/login.png&#34; alt=&#34;Logging in&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/login.png&#34; alt=&#34;Logging in&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;nodes&#34;&gt;Nodes&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/nodes.png&#34; alt=&#34;Nodes&#34;&gt;
-&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/node-detail.png&#34; alt=&#34;Node detail&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/nodes.png&#34; alt=&#34;Nodes&#34;&gt;
+&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/node-detail.png&#34; alt=&#34;Node detail&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;volumes&#34;&gt;Volumes&lt;/h2&gt;
 &lt;p&gt;You can create volumes, including replicated volumes, and view volume details:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/volumes.png&#34; alt=&#34;Viewing storage volumes&#34;&gt;
-&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/volume-detail.png&#34; alt=&#34;Viewing details of a volume&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/volumes.png&#34; alt=&#34;Viewing storage volumes&#34;&gt;
+&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/volume-detail.png&#34; alt=&#34;Viewing details of a volume&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;licensing&#34;&gt;Licensing&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/license.png&#34; alt=&#34;License&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/license.png&#34; alt=&#34;License&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;cluster-info&#34;&gt;Cluster info&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/cluster.png&#34; alt=&#34;Cluster&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/cluster.png&#34; alt=&#34;Cluster&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;namespaces&#34;&gt;Namespaces&lt;/h2&gt;
 &lt;p&gt;Volumes can be namespaced across different projects or teams, and you can switch namespace using the left hand panel:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/gui-v2/namespaces.png&#34; alt=&#34;Viewing namespaces&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/gui-v2/namespaces.png&#34; alt=&#34;Viewing namespaces&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Init container</title>
-      <link>https://ondat.github.io/docs/reference/init-container/</link>
+      <link>https://docs.ondat.io/docs/reference/init-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/init-container/</guid>
+      <guid>https://docs.ondat.io/docs/reference/init-container/</guid>
       <description>
         
         
@@ -488,7 +488,7 @@ Ingress rule. i.e &lt;code&gt;kubectl -n kube-system port-forward svc/storageos 
 Ondat starts an init container that sets the system configuration for
 Ondat. The container also manages configuration changes required when
 upgrading Ondat versions.&lt;/p&gt;
-&lt;p&gt;The container belongs to the DaemonSet that the &lt;a href=&#34;https://ondat.github.io/docs/reference/cluster-operator/&#34;&gt;Ondat Cluster
+&lt;p&gt;The container belongs to the DaemonSet that the &lt;a href=&#34;https://docs.ondat.io/docs/reference/cluster-operator/&#34;&gt;Ondat Cluster
 Operator&lt;/a&gt; starts when a
 &lt;code&gt;StorageOSCluster&lt;/code&gt; resource is created. The &lt;code&gt;storageos-init&lt;/code&gt; container is
 executed as an
@@ -525,24 +525,24 @@ be used:&lt;/p&gt;
     
     <item>
       <title>Docs: Kubernetes Object Sync</title>
-      <link>https://ondat.github.io/docs/reference/kubernetes-object-sync/</link>
+      <link>https://docs.ondat.io/docs/reference/kubernetes-object-sync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/kubernetes-object-sync/</guid>
+      <guid>https://docs.ondat.io/docs/reference/kubernetes-object-sync/</guid>
       <description>
         
         
-        &lt;p&gt;The below controllers are part of the &lt;a href=&#34;https://ondat.github.io/docs/concepts/components/&#34;&gt;Ondat API manager&lt;/a&gt;, and handle a variety of cases where
+        &lt;p&gt;The below controllers are part of the &lt;a href=&#34;https://docs.ondat.io/docs/concepts/components/&#34;&gt;Ondat API manager&lt;/a&gt;, and handle a variety of cases where
 information about Kubernetes objects from your cluster needs to be synced to
 your Ondat cluster.&lt;/p&gt;
 &lt;p&gt;The CSI Driver annotation mentioned below is added to your PVC or Node
 automatically by Ondat and is not removed. It is set by default in the case
-of a PVC &lt;a href=&#34;https://ondat.github.io/docs/operations/storageclasses/&#34;&gt;StorageClass&lt;/a&gt; or
+of a PVC &lt;a href=&#34;https://docs.ondat.io/docs/operations/storageclasses/&#34;&gt;StorageClass&lt;/a&gt; or
 PVC&amp;rsquo;s StorageClassName parameter, or in the case of a node, by the node driver
 registrar.&lt;/p&gt;
 &lt;h2 id=&#34;pvc-label-sync&#34;&gt;PVC Label Sync&lt;/h2&gt;
 &lt;p&gt;The PVC Label Sync Controller applies labels that have been added to your PVCs
-to your &lt;a href=&#34;https://ondat.github.io/docs/concepts/volumes/&#34;&gt;Ondat Volume objects&lt;/a&gt;. The
+to your &lt;a href=&#34;https://docs.ondat.io/docs/concepts/volumes/&#34;&gt;Ondat Volume objects&lt;/a&gt;. The
 PVC must have the Ondat CSI Driver annotation. If there is a label with the
 same key on the PVC and on the StorageClass the PVC label will take precedence.&lt;/p&gt;
 &lt;p&gt;Ondat dynamically provisions Ondat Volumes when you create a PVC
@@ -556,7 +556,7 @@ resync runs every hour (this is configurable via &lt;code&gt;-pvc-label-resync-i
 flag for the &lt;a href=&#34;https://github.com/storageos/api-manager&#34;&gt;API Manager&lt;/a&gt;).&lt;/p&gt;
 &lt;h2 id=&#34;node-label-sync&#34;&gt;Node Label Sync&lt;/h2&gt;
 &lt;p&gt;The Node Label Sync controller ensures that labels applied to your Kubernetes
-nodes are synced through to Ondat. It is necessary for your &lt;a href=&#34;https://ondat.github.io/docs/concepts/nodes/&#34;&gt;Node&lt;/a&gt; to have the Ondat CSI Driver annotation.&lt;/p&gt;
+nodes are synced through to Ondat. It is necessary for your &lt;a href=&#34;https://docs.ondat.io/docs/concepts/nodes/&#34;&gt;Node&lt;/a&gt; to have the Ondat CSI Driver annotation.&lt;/p&gt;
 &lt;p&gt;When labels are applied to your Kubernetes nodes, they do not automatically
 sync to Ondat, hence this controller is required to automatically apply the
 expected behaviour to your Ondat cluster.&lt;/p&gt;
@@ -580,7 +580,7 @@ This is to prevent data loss by accidental deletion of a master volume.&lt;/p&gt
 Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;namespace-delete&#34;&gt;Namespace Delete&lt;/h2&gt;
 &lt;p&gt;The Namespace Delete Controller is responsible for removing Ondat
-&lt;a href=&#34;https://ondat.github.io/docs/concepts/namespaces/&#34;&gt;namespaces&lt;/a&gt; from the Ondat
+&lt;a href=&#34;https://docs.ondat.io/docs/concepts/namespaces/&#34;&gt;namespaces&lt;/a&gt; from the Ondat
 cluster when the corresponding Kubernetes namespace has been removed from
 Kubernetes.&lt;/p&gt;
 &lt;p&gt;The Ondat controlplane automatically creates a new Ondat namespace when
@@ -597,10 +597,10 @@ Manager&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: Ondat Feature Labels</title>
-      <link>https://ondat.github.io/docs/reference/labels/</link>
+      <link>https://docs.ondat.io/docs/reference/labels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/labels/</guid>
+      <guid>https://docs.ondat.io/docs/reference/labels/</guid>
       <description>
         
         
@@ -753,7 +753,7 @@ Ondat volume directly.&lt;/p&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;For a pod to be fenced by Ondat, a few requirements described in the
-&lt;a href=&#34;https://ondat.github.io/docs/operations/fencing/&#34;&gt;Fencing Operations&lt;/a&gt; page need to be fulfilled.&lt;/p&gt;
+&lt;a href=&#34;https://docs.ondat.io/docs/operations/fencing/&#34;&gt;Fencing Operations&lt;/a&gt; page need to be fulfilled.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;kubectl label pod &lt;span style=&#34;color:#000&#34;&gt;$POD&lt;/span&gt; storageos.com/fenced&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is recommended to define the fenced label in the pod&amp;rsquo;s manifest, i.e in the
@@ -785,10 +785,10 @@ spec:
     
     <item>
       <title>Docs: Licence</title>
-      <link>https://ondat.github.io/docs/reference/licence/</link>
+      <link>https://docs.ondat.io/docs/reference/licence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/licence/</guid>
+      <guid>https://docs.ondat.io/docs/reference/licence/</guid>
       <description>
         
         
@@ -796,7 +796,7 @@ spec:
 run unlicensed for 24 hours. After that, new operations such as volume
 provisioning or adding nodes are not permitted. Normal functioning of the
 cluster can be unlocked by applying a Free Personal licence.&lt;/p&gt;
-&lt;p&gt;To learn how to apply a licence to your cluster, check the &lt;a href=&#34;https://ondat.github.io/docs/operations/licensing/&#34;&gt;operations
+&lt;p&gt;To learn how to apply a licence to your cluster, check the &lt;a href=&#34;https://docs.ondat.io/docs/operations/licensing/&#34;&gt;operations
 licensing&lt;/a&gt; page.&lt;/p&gt;
 &lt;h2 id=&#34;free-personal-licence&#34;&gt;Free Personal licence&lt;/h2&gt;
 &lt;p&gt;The personal licence only requires the user to register and issue a
@@ -824,10 +824,10 @@ tied to the capacity of the backend disks on your nodes.&lt;/p&gt;
     
     <item>
       <title>Docs: Ondat Telemetry</title>
-      <link>https://ondat.github.io/docs/reference/telemetry/</link>
+      <link>https://docs.ondat.io/docs/reference/telemetry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/telemetry/</guid>
+      <guid>https://docs.ondat.io/docs/reference/telemetry/</guid>
       <description>
         
         
@@ -931,7 +931,7 @@ telemetry server so it is never processed outside of Ondat assets.&lt;/p&gt;
 &lt;p&gt;It is possible to disable telemetry using the GUI, CLI, API, environment
 variables or the Ondat Cluster Spec.&lt;/p&gt;
 &lt;h4 id=&#34;ondat-cluster-spec&#34;&gt;Ondat Cluster Spec&lt;/h4&gt;
-&lt;p&gt;Disable telemetry explicitly through the configurable &lt;a href=&#34;https://ondat.github.io/docs/reference/cluster-operator/configuration/&#34;&gt;spec parameters&lt;/a&gt; of the
+&lt;p&gt;Disable telemetry explicitly through the configurable &lt;a href=&#34;https://docs.ondat.io/docs/reference/cluster-operator/configuration/&#34;&gt;spec parameters&lt;/a&gt; of the
 StorageOSCluster custom resource.&lt;/p&gt;
 &lt;h4 id=&#34;environment-variables&#34;&gt;Environment Variables&lt;/h4&gt;
 &lt;p&gt;You can use the following environmental variables to disable or enable telemetry.&lt;/p&gt;
@@ -944,10 +944,10 @@ DISABLE_ERROR_REPORTING &lt;span style=&#34;color:#8f5902;font-style:italic&#34;
     
     <item>
       <title>Docs: Ondat Open Source Software Attribution Notice</title>
-      <link>https://ondat.github.io/docs/reference/open_source_attribution/</link>
+      <link>https://docs.ondat.io/docs/reference/open_source_attribution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/open_source_attribution/</guid>
+      <guid>https://docs.ondat.io/docs/reference/open_source_attribution/</guid>
       <description>
         
         
@@ -5735,10 +5735,10 @@ limitations under the License.
     
     <item>
       <title>Docs: Release notes</title>
-      <link>https://ondat.github.io/docs/reference/release_notes/</link>
+      <link>https://docs.ondat.io/docs/reference/release_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/release_notes/</guid>
+      <guid>https://docs.ondat.io/docs/reference/release_notes/</guid>
       <description>
         
         
@@ -5746,17 +5746,17 @@ limitations under the License.
 and to perform upgrades only after reading the release notes.&lt;/p&gt;
 &lt;p&gt;The latest tagged release is &lt;code&gt;v2.4.4&lt;/code&gt;. For
 installation instructions please see our
-&lt;a href=&#34;https://ondat.github.io/docs/reference/cluster-operator/install/&#34;&gt;Install&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://docs.ondat.io/docs/reference/cluster-operator/install/&#34;&gt;Install&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;The latest CLI release is &lt;code&gt;v2.4.4&lt;/code&gt;, available from
 &lt;a href=&#34;https://github.com/storageos/go-cli/releases&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;upgrading&#34;&gt;Upgrading&lt;/h1&gt;
-&lt;p&gt;To upgrade from version 1.x to 2.x, please contact &lt;a href=&#34;https://ondat.github.io/docs/support/&#34;&gt;support&lt;/a&gt; for assistance.&lt;/p&gt;
+&lt;p&gt;To upgrade from version 1.x to 2.x, please contact &lt;a href=&#34;https://docs.ondat.io/docs/support/&#34;&gt;support&lt;/a&gt; for assistance.&lt;/p&gt;
 &lt;h2 id=&#34;244---released-2021-09-08&#34;&gt;2.4.4 - Released 2021-09-08&lt;/h2&gt;
 &lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;controlplane: Fix an issue with timeouts when opening gRPC connections to other
 nodes in the cluster.&lt;/li&gt;
-&lt;li&gt;controlplane: Changes to GUI licensing workflow - See our &lt;a href=&#34;https://ondat.github.io/docs/reference/licence/&#34;&gt;Licensing page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;controlplane: Changes to GUI licensing workflow - See our &lt;a href=&#34;https://docs.ondat.io/docs/reference/licence/&#34;&gt;Licensing page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;dataplane: Fix an issue where failed IO network connections could be erroneously
 restarted while we are trying to shutdown.&lt;/li&gt;
 &lt;li&gt;k8s: Leader election requires ability to patch events.&lt;/li&gt;
@@ -5809,12 +5809,12 @@ level on an individual node.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;v240---released-2021-05-27&#34;&gt;v2.4.0 - Released 2021-05-27&lt;/h2&gt;
-&lt;p&gt;This release adds production-grade &lt;a href=&#34;https://ondat.github.io/docs/reference/encryption/&#34;&gt;encryption at rest &lt;/a&gt; for Ondat volumes, as well as:&lt;/p&gt;
+&lt;p&gt;This release adds production-grade &lt;a href=&#34;https://docs.ondat.io/docs/reference/encryption/&#34;&gt;encryption at rest &lt;/a&gt; for Ondat volumes, as well as:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ondat.github.io/docs/concepts/fencing/&#34;&gt;Fencing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ondat.github.io/docs/operations/trim/&#34;&gt;TRIM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ondat.github.io/docs/concepts/replication/#failure-modes&#34;&gt;Failure modes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ondat.github.io/docs/reference/kubernetes-object-sync/&#34;&gt;Kubernetes object sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ondat.io/docs/concepts/fencing/&#34;&gt;Fencing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ondat.io/docs/operations/trim/&#34;&gt;TRIM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ondat.io/docs/concepts/replication/#failure-modes&#34;&gt;Failure modes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ondat.io/docs/reference/kubernetes-object-sync/&#34;&gt;Kubernetes object sync&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Note: v2.4.0 &lt;em&gt;requires&lt;/em&gt; Kubernetes 1.17 or newer.&lt;/p&gt;
 &lt;h3 id=&#34;new-1&#34;&gt;New&lt;/h3&gt;
@@ -6314,7 +6314,7 @@ technology preview in v1.&lt;/p&gt;
 &lt;h3 id=&#34;new-3&#34;&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Adds support for &lt;code&gt;ReadWriteMany&lt;/code&gt; shared volumes.  See
-&lt;a href=&#34;https://ondat.github.io/docs/concepts/rwx/&#34;&gt;ReadWriteMany&lt;/a&gt;.&lt;/li&gt;
+&lt;a href=&#34;https://docs.ondat.io/docs/concepts/rwx/&#34;&gt;ReadWriteMany&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Adds &lt;code&gt;api-manager&lt;/code&gt; deployment to support shared volumes.  See &lt;a href=&#34;https://github.com/storageos/api-manager&#34;&gt;the api
 manager&lt;/a&gt; Github repository for more
 information.&lt;/li&gt;
@@ -6364,7 +6364,7 @@ propagate to all nodes.&lt;/li&gt;
 &lt;li&gt;init: Checks the effective maximum PID limit and warns if less than the
 Ondat recommended PID limit (32,768).  CRIO-based distributions such as
 Openshift have a much lower default value (1024).  Consult
-&lt;a href=&#34;https://ondat.github.io/docs/prerequisites/pidlimits/&#34;&gt;prerequisites&lt;/a&gt; for more
+&lt;a href=&#34;https://docs.ondat.io/docs/prerequisites/pidlimits/&#34;&gt;prerequisites&lt;/a&gt; for more
 information.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fixed-7&#34;&gt;Fixed&lt;/h3&gt;
@@ -6388,7 +6388,7 @@ improvements across the board. Of particular note:&lt;/p&gt;
 &lt;li&gt;I/O for large block sizes (128K) has improved by up to 353%&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We are extremely proud of our performance and we love to talk about it. Have a
-look at the &lt;a href=&#34;https://ondat.github.io/docs/self-eval/#Benchmarking&#34;&gt;Benchmarking&lt;/a&gt; section of the self-evaluation guide and consider sharing
+look at the &lt;a href=&#34;https://docs.ondat.io/docs/self-eval/#Benchmarking&#34;&gt;Benchmarking&lt;/a&gt; section of the self-evaluation guide and consider sharing
 your results. Our PRE engineers are available to discuss in our &lt;a href=&#34;https://storageos.slack.com&#34;&gt;slack
 channel&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;new-4&#34;&gt;New&lt;/h3&gt;
@@ -6406,7 +6406,7 @@ Applications like Kafka will go much faster.&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;On-disk compression is now disabled by default as in most scenarios this
 offers better performance. To enable on-disk compression for a specific
-workload, see &lt;a href=&#34;https://ondat.github.io/docs/concepts/compression/&#34;&gt;compression&lt;/a&gt;.&lt;/p&gt;
+workload, see &lt;a href=&#34;https://docs.ondat.io/docs/concepts/compression/&#34;&gt;compression&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;improved-2&#34;&gt;Improved&lt;/h3&gt;
@@ -6460,7 +6460,7 @@ after a restart. This resulted in multiple entries in &lt;code&gt;/proc/mounts&l
 &lt;ul&gt;
 &lt;li&gt;csi: Volume expansion now supported in offline mode. To expand a volume, stop
 any workloads accessing the volume, then edit the PVC to increase the
-capacity. For more information, see our &lt;a href=&#34;https://ondat.github.io/docs/operations/resize/&#34;&gt;Volume Resize&lt;/a&gt; operations page and the &lt;a href=&#34;https://kubernetes-csi.github.io/docs/volume-expansion.html&#34;&gt;&lt;code&gt;CSI Volume Expansion&lt;/code&gt;&lt;/a&gt;
+capacity. For more information, see our &lt;a href=&#34;https://docs.ondat.io/docs/operations/resize/&#34;&gt;Volume Resize&lt;/a&gt; operations page and the &lt;a href=&#34;https://kubernetes-csi.github.io/docs/volume-expansion.html&#34;&gt;&lt;code&gt;CSI Volume Expansion&lt;/code&gt;&lt;/a&gt;
 page.&lt;/li&gt;
 &lt;li&gt;api: Volume configuration including replica count can now be updated while
 the volume is in use. Other updateable fields include labels and
@@ -6556,10 +6556,10 @@ Blog&lt;/a&gt; for details.&lt;/p&gt;
     
     <item>
       <title>Docs: Resource Requests and Limits</title>
-      <link>https://ondat.github.io/docs/reference/resource_requests_and_limits/</link>
+      <link>https://docs.ondat.io/docs/reference/resource_requests_and_limits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/resource_requests_and_limits/</guid>
+      <guid>https://docs.ondat.io/docs/reference/resource_requests_and_limits/</guid>
       <description>
         
         
@@ -6587,7 +6587,7 @@ DaemonSet Pods of being evicted.&lt;/p&gt;
 &lt;a href=&#34;https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/&#34;&gt;Kubernetes
 documentation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;defining-pod-resource-requests-and-reservations&#34;&gt;Defining Pod resource requests and reservations&lt;/h2&gt;
-&lt;p&gt;To add resource requests and reservations to the Ondat DaemonSet &lt;a href=&#34;https://ondat.github.io/docs/reference/cluster-operator/examples/#defining-pod-resource-requests-and-reservations&#34;&gt;configure
+&lt;p&gt;To add resource requests and reservations to the Ondat DaemonSet &lt;a href=&#34;https://docs.ondat.io/docs/reference/cluster-operator/examples/#defining-pod-resource-requests-and-reservations&#34;&gt;configure
 them in the StorageOSCluster
 resource&lt;/a&gt;.&lt;/p&gt;
 
@@ -6596,10 +6596,10 @@ resource&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: Ondat Scheduler</title>
-      <link>https://ondat.github.io/docs/reference/scheduler/</link>
+      <link>https://docs.ondat.io/docs/reference/scheduler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/scheduler/</guid>
+      <guid>https://docs.ondat.io/docs/reference/scheduler/</guid>
       <description>
         
         
@@ -6613,7 +6613,7 @@ Volume is located, because IO operations are fastest as a result of minimized
 network traffic and associated latency. Read operations are served locally and
 writes require fewer round trips to the replicas of the volume.&lt;/p&gt;
 &lt;p&gt;Ondat automatically enables the use of a custom scheduler for any Pod
-using Ondat Volumes. Checkout the &lt;a href=&#34;https://ondat.github.io/docs/reference/scheduler/admission-controller/&#34;&gt;Admission Controller reference&lt;/a&gt; for more
+using Ondat Volumes. Checkout the &lt;a href=&#34;https://docs.ondat.io/docs/reference/scheduler/admission-controller/&#34;&gt;Admission Controller reference&lt;/a&gt; for more
 information.&lt;/p&gt;
 &lt;h2 id=&#34;storageos-kubernetes-scheduler&#34;&gt;Storageos Kubernetes Scheduler&lt;/h2&gt;
 &lt;p&gt;Ondat achieves Pod locality by implementing a Kubernetes scheduler
@@ -6664,18 +6664,18 @@ fulfill the following prerequisites:&lt;/p&gt;
     
     <item>
       <title>Docs: Supported File systems</title>
-      <link>https://ondat.github.io/docs/reference/filesystems/</link>
+      <link>https://docs.ondat.io/docs/reference/filesystems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/filesystems/</guid>
+      <guid>https://docs.ondat.io/docs/reference/filesystems/</guid>
       <description>
         
         
         &lt;h2 id=&#34;host-filesystems&#34;&gt;Host Filesystems&lt;/h2&gt;
 &lt;p&gt;Ondat will automatically use &lt;code&gt;/var/lib/storageos&lt;/code&gt; on each host as a base
-directory for storing &lt;a href=&#34;https://ondat.github.io/docs/concepts/volumes#blob-files&#34;&gt;configuration and blob
+directory for storing &lt;a href=&#34;https://docs.ondat.io/docs/concepts/volumes#blob-files&#34;&gt;configuration and blob
 files&lt;/a&gt;. Supported host filesystem types
-are &lt;code&gt;ext4&lt;/code&gt; and &lt;code&gt;xfs&lt;/code&gt;. If you require a specific filesystem please &lt;a href=&#34;https://ondat.github.io/docs/support/contactus&#34;&gt;contact
+are &lt;code&gt;ext4&lt;/code&gt; and &lt;code&gt;xfs&lt;/code&gt;. If you require a specific filesystem please &lt;a href=&#34;https://docs.ondat.io/docs/support/contactus&#34;&gt;contact
 Ondat&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;persistent-volume-filesystems&#34;&gt;Persistent Volume Filesystems&lt;/h2&gt;
 &lt;p&gt;Ondat provides a block device on which a file system can be created. The
@@ -6691,10 +6691,10 @@ ext2, ext3, ext4 and xfs file systems.&lt;/p&gt;
     
     <item>
       <title>Docs: Tolerations</title>
-      <link>https://ondat.github.io/docs/reference/tolerations/</link>
+      <link>https://docs.ondat.io/docs/reference/tolerations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/tolerations/</guid>
+      <guid>https://docs.ondat.io/docs/reference/tolerations/</guid>
       <description>
         
         
@@ -6734,7 +6734,7 @@ documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;operator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;Exists&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;adding-custom-tolerations&#34;&gt;Adding Custom Tolerations&lt;/h2&gt;
-&lt;p&gt;To add custom tolerations to the Ondat daemonset &lt;a href=&#34;https://ondat.github.io/docs/reference/cluster-operator/examples/#specifying-custom-tolerations&#34;&gt;configure them in the
+&lt;p&gt;To add custom tolerations to the Ondat daemonset &lt;a href=&#34;https://docs.ondat.io/docs/reference/cluster-operator/examples/#specifying-custom-tolerations&#34;&gt;configure them in the
 StorageOSCluster
 resource&lt;/a&gt;.&lt;/p&gt;
 

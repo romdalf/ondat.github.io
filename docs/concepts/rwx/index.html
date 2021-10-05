@@ -26,7 +26,7 @@
 Ondat RWX Volumes are based on a shared filesystem - in the case of our implementation, this is NFS.
 Architecture For each RWX Volume, the following components are involved:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/docs/concepts/rwx/" />
+<meta property="og:url" content="https://docs.ondat.io/docs/concepts/rwx/" />
 
 <meta itemprop="name" content="ReadWriteMany">
 <meta itemprop="description" content="Please note: Ondat Project edition is required to create RWX Volumes.
@@ -148,7 +148,7 @@ Architecture For each RWX Volume, the following components are involved:"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -296,7 +296,7 @@ Architecture For each RWX Volume, the following components are involved:"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -1302,21 +1302,21 @@ Architecture For each RWX Volume, the following components are involved:"/>
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/docs/concepts/rwx/">ReadWriteMany</a>
+	<a href="https://docs.ondat.io/docs/concepts/rwx/">ReadWriteMany</a>
 </li>
 
 	</ol>
@@ -1338,7 +1338,7 @@ implementation, this is NFS.</p>
 <h2 id="architecture">Architecture</h2>
 <p>For each RWX Volume, the following components are involved:</p>
 <p><strong>Ondat ReadWriteOnly (RWO) Volume</strong></p>
-<p>Ondat provisions a standard <a href="https://ondat.github.io/docs/concepts/volumes/">Volume</a> that provides a block device for the file system of the NFS server. This
+<p>Ondat provisions a standard <a href="https://docs.ondat.io/docs/concepts/volumes/">Volume</a> that provides a block device for the file system of the NFS server. This
 means that every RWX Volume has its own RWO Volume. This allows RWX Volumes to
 leverage the synchronous replication and automatic failover functionality of
 Ondat, providing the NFS server with high availability.</p>
@@ -1349,7 +1349,7 @@ server uses its own RWO Volume to store data so the data of each Volume is
 isolated.</p>
 <p>Ondat binds an ephemeral port to the host network interface for each
 NFS-Ganesha server. The NFS export is presented using NFS v4.2. Check the
-<a href="https://ondat.github.io/docs/prerequisites/firewalls/">prerequisites page</a> to see the
+<a href="https://docs.ondat.io/docs/prerequisites/firewalls/">prerequisites page</a> to see the
 range of ports needed for Ondat RWX Volumes.</p>
 <p><strong>Ondat API Manager</strong></p>
 <p>Ondat fully integrates with Kubernetes. The Ondat API Manager Pod
@@ -1387,7 +1387,7 @@ application Node (where the user&rsquo;s Pod is running) automatically reconnect
 <li>A Ondat RWX Volume is matched one-to-one with a PVC. Therefore the
 Ondat RWX Volume can only be accessed by Pods in the same Kubernetes
 namespace.</li>
-<li>Ondat RWX Volumes support volume resize. Refer to the <a href="https://ondat.github.io/docs/operations/resize/">resize</a> documentation for more details.</li>
+<li>Ondat RWX Volumes support volume resize. Refer to the <a href="https://docs.ondat.io/docs/operations/resize/">resize</a> documentation for more details.</li>
 </ul>
 
 	

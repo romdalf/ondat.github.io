@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Ondat Scheduler</title>
-    <link>https://ondat.github.io/docs/reference/scheduler/</link>
+    <link>https://docs.ondat.io/docs/reference/scheduler/</link>
     <description>Recent content in Ondat Scheduler on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://ondat.github.io/docs/reference/scheduler/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.ondat.io/docs/reference/scheduler/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,16 +15,16 @@
     
     <item>
       <title>Docs: Admission Controller</title>
-      <link>https://ondat.github.io/docs/reference/scheduler/admission-controller/</link>
+      <link>https://docs.ondat.io/docs/reference/scheduler/admission-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/reference/scheduler/admission-controller/</guid>
+      <guid>https://docs.ondat.io/docs/reference/scheduler/admission-controller/</guid>
       <description>
         
         
         &lt;p&gt;Ondat implements a &lt;code&gt;MutatingAdmissionWebhook&lt;/code&gt; &lt;a href=&#34;https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#what-are-admission-webhooks&#34;&gt;Admission
 Controller&lt;/a&gt;
-to ensure that Pods using Ondat Volumes use the &lt;a href=&#34;https://ondat.github.io/docs/reference/scheduler/&#34;&gt;storageos-scheduler&lt;/a&gt;. An admission controller intercepts
+to ensure that Pods using Ondat Volumes use the &lt;a href=&#34;https://docs.ondat.io/docs/reference/scheduler/&#34;&gt;storageos-scheduler&lt;/a&gt;. An admission controller intercepts
 requests to the Kubernetes API server prior to persistence of the object, but
 after the request is authenticated and authorized.&lt;/p&gt;
 &lt;p&gt;The Admission Controller is responsible for mutating the PodSpec at creation time
@@ -62,7 +62,7 @@ be added to resources that use Ondat volumes.&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;...&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;explicit-schedulername&#34;&gt;Explicit SchedulerName&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It is not necessary to explicitly set the SchedulerName as the &lt;a href=&#34;https://ondat.github.io/docs/reference/scheduler/admission-controller/&#34;&gt;Admission
+&lt;p&gt;It is not necessary to explicitly set the SchedulerName as the &lt;a href=&#34;https://docs.ondat.io/docs/reference/scheduler/admission-controller/&#34;&gt;Admission
 Controller&lt;/a&gt;
 automatically populates the PodSpec field. Set the SchedulerName in your
 manifests, manually, only if you disable or can&amp;rsquo;t execute the Ondat

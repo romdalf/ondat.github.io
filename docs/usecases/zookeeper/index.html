@@ -24,7 +24,7 @@
 <meta property="og:description" content="ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 Using Ondat persistent volumes with Apache Zookeeper means that if a pod fails, the cluster is only in a degraded state for as long as it takes Kubernetes to restart the pod. When the pod comes back up, the pod data is immediately available. Should Kubernetes schedule the Zookeeper pod on a new node, Ondat allows for the data to be available to the pod, irrespective of whether or not the original Ondat master volume is located on the same node." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/docs/usecases/zookeeper/" />
+<meta property="og:url" content="https://docs.ondat.io/docs/usecases/zookeeper/" />
 
 <meta itemprop="name" content="Zookeeper">
 <meta itemprop="description" content="ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
@@ -142,7 +142,7 @@ Using Ondat persistent volumes with Apache Zookeeper means that if a pod fails, 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ Using Ondat persistent volumes with Apache Zookeeper means that if a pod fails, 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -1299,21 +1299,21 @@ Using Ondat persistent volumes with Apache Zookeeper means that if a pod fails, 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/usecases/">Use Cases</a>
+	<a href="https://docs.ondat.io/docs/usecases/">Use Cases</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/docs/usecases/zookeeper/">Zookeeper</a>
+	<a href="https://docs.ondat.io/docs/usecases/zookeeper/">Zookeeper</a>
 </li>
 
 	</ol>
@@ -1336,13 +1336,13 @@ is located on the same node.</p>
 <p>As Zookeeper has features to allow it to handle replication, and as such
 careful consideration of whether to allow Ondat or Zookeeper to handle replication is required.</p>
 <p>Before you start, ensure you have Ondat installed and ready on a Kubernetes
-cluster. <a href="https://ondat.github.io/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
+cluster. <a href="https://docs.ondat.io/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
 information</a>.</p>
 <h2 id="deploying-zookeeper-on-kubernetes">Deploying Zookeeper on Kubernetes</h2>
 <h3 id="pre-requisites">Pre-requisites</h3>
 <ul>
 <li>Ondat is assumed to have been installed; please check for the latest
-available version <a href="https://ondat.github.io/docs/reference/release_notes/">here</a>.</li>
+available version <a href="https://docs.ondat.io/docs/reference/release_notes/">here</a>.</li>
 </ul>
 <h3 id="helm">Helm</h3>
 <p>To simplify the deployment of Zookeeper, we&rsquo;ve used this <a href="https://github.com/helm/charts/tree/master/incubator/zookeeper">Zookeeper helm chart

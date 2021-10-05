@@ -24,7 +24,7 @@
 <meta property="og:description" content="Use an external Etcd cluster Ondat uses the etcd distributed key-value store to store essential cluster metadata and manage distributed configuration state. For production environments and testing of production workloads, we recommend deploying an external etcd cluster. For more details about, and an example of, how to run etcd, see the External etcd Operations page.
 It is highly recommended to use external etcd for cloud environments and place the etcd cluster on stable nodes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.2/docs/best-practices/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.2/docs/best-practices/" />
 
 <meta itemprop="name" content="Ondat Best Practices">
 <meta itemprop="description" content="Use an external Etcd cluster Ondat uses the etcd distributed key-value store to store essential cluster metadata and manage distributed configuration state. For production environments and testing of production workloads, we recommend deploying an external etcd cluster. For more details about, and an example of, how to run etcd, see the External etcd Operations page.
@@ -142,7 +142,7 @@ It is highly recommended to use external etcd for cloud environments and place t
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.2/offline-search-index.085dc873fcd04d1cf2f1e5d00934d0d8cb095add61e4f27b4bdd7e04d7937047c6a30429056d765014904d1f56ac29f3ab878f6282f8af8592b79728466e38b1.json"
+  data-offline-search-index-json-src="/v2.2/offline-search-index.e5fee2ea7847f2bb3ba6ee70de23e04053c41d10327a44be3de2e4c521fdfc2a5239179c1782a6dd158f6beefeb18379b83757fa625e7379cd3dc8e682516e56.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ It is highly recommended to use external etcd for cloud environments and place t
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.2/offline-search-index.085dc873fcd04d1cf2f1e5d00934d0d8cb095add61e4f27b4bdd7e04d7937047c6a30429056d765014904d1f56ac29f3ab878f6282f8af8592b79728466e38b1.json"
+  data-offline-search-index-json-src="/v2.2/offline-search-index.e5fee2ea7847f2bb3ba6ee70de23e04053c41d10327a44be3de2e4c521fdfc2a5239179c1782a6dd158f6beefeb18379b83757fa625e7379cd3dc8e682516e56.json"
   data-offline-search-base-href="/"
 >
 
@@ -1127,14 +1127,14 @@ It is highly recommended to use external etcd for cloud environments and place t
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.2/docs/best-practices/">Best Practices</a>
+	<a href="https://docs.ondat.io/v2.2/docs/best-practices/">Best Practices</a>
 </li>
 
 	</ol>
@@ -1164,7 +1164,7 @@ workloads apart from the etcd servers.</p>
 <p>We recommend creating a separate filesystem for Ondat to mitigate the risk
 of filling the root filesystem on nodes. This has to be done for each node in
 the cluster.</p>
-<p>Follow the <a href="https://ondat.github.io/v2.2/docs/operations/managing-host-storage/">managing host storage</a> best practices page for more
+<p>Follow the <a href="https://docs.ondat.io/v2.2/docs/operations/managing-host-storage/">managing host storage</a> best practices page for more
 details.</p>
 <h2 id="resource-reservations">Resource reservations</h2>
 <p>Ondat resource consumption depends on the workloads and the Ondat
@@ -1187,7 +1187,7 @@ replica must have at least 3 storage nodes. When using Volumes with 2
 replicas, at least 4 storage nodes, 3 replicas, 5 nodes, etc.</p>
 <p>Minimum number of storage nodes = 1 (primary) + N (replicas) + 1</p>
 <p>For more information, see the section on
-<a href="https://ondat.github.io/v2.2/docs/concepts/replication/#number-of-nodes">replication</a>.</p>
+<a href="https://docs.ondat.io/v2.2/docs/concepts/replication/#number-of-nodes">replication</a>.</p>
 <h2 id="ondat-api-usernamepassword">Ondat API username/password</h2>
 <p>The API grants full access to Ondat functionality, therefore we recommend
 that the default administrative password of &lsquo;storageos&rsquo; is reset to something
@@ -1227,7 +1227,7 @@ define Ondat pools based on node selectors to collocate volumes.</p>
 <p>Losing a few nodes at the same time could cause the loss of data even when
 volume replicas are being used.</p>
 <h2 id="port-blocking">Port blocking</h2>
-<p>Ondat exposes ports to operate. It is recommended that the <a href="https://ondat.github.io/v2.2/docs/prerequisites/firewalls/">ports</a> are not accessible from outside
+<p>Ondat exposes ports to operate. It is recommended that the <a href="https://docs.ondat.io/v2.2/docs/prerequisites/firewalls/">ports</a> are not accessible from outside
 the scope of your cluster.</p>
 <h2 id="ondat-in-docker-ee">Ondat in Docker EE</h2>
 <p>Ondat does not support running on Swarm nodes nor on mixed (Kubernetes and

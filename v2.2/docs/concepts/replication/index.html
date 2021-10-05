@@ -24,7 +24,7 @@
 <meta property="og:description" content="Ondat replicates volumes across nodes for data protection and high availability. Synchronous replication ensures strong consistency for applications such as databases and Elasticsearch, incurring one network round trip on writes.
 The basic model for Ondat replication is of a master volume with distributed replicas. Each volume can be replicated between 0 and 5 times, which are provisioned to 0 to 5 nodes, up to the number of remaining nodes in the cluster." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.2/docs/concepts/replication/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.2/docs/concepts/replication/" />
 
 <meta itemprop="name" content="Replication">
 <meta itemprop="description" content="Ondat replicates volumes across nodes for data protection and high availability. Synchronous replication ensures strong consistency for applications such as databases and Elasticsearch, incurring one network round trip on writes.
@@ -142,7 +142,7 @@ The basic model for Ondat replication is of a master volume with distributed rep
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.2/offline-search-index.085dc873fcd04d1cf2f1e5d00934d0d8cb095add61e4f27b4bdd7e04d7937047c6a30429056d765014904d1f56ac29f3ab878f6282f8af8592b79728466e38b1.json"
+  data-offline-search-index-json-src="/v2.2/offline-search-index.e5fee2ea7847f2bb3ba6ee70de23e04053c41d10327a44be3de2e4c521fdfc2a5239179c1782a6dd158f6beefeb18379b83757fa625e7379cd3dc8e682516e56.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ The basic model for Ondat replication is of a master volume with distributed rep
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.2/offline-search-index.085dc873fcd04d1cf2f1e5d00934d0d8cb095add61e4f27b4bdd7e04d7937047c6a30429056d765014904d1f56ac29f3ab878f6282f8af8592b79728466e38b1.json"
+  data-offline-search-index-json-src="/v2.2/offline-search-index.e5fee2ea7847f2bb3ba6ee70de23e04053c41d10327a44be3de2e4c521fdfc2a5239179c1782a6dd158f6beefeb18379b83757fa625e7379cd3dc8e682516e56.json"
   data-offline-search-base-href="/"
 >
 
@@ -1126,21 +1126,21 @@ The basic model for Ondat replication is of a master volume with distributed rep
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.2/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/v2.2/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.2/docs/concepts/replication/">Replication</a>
+	<a href="https://docs.ondat.io/v2.2/docs/concepts/replication/">Replication</a>
 </li>
 
 	</ol>
@@ -1182,7 +1182,7 @@ begin to sync. Should the former master come back online it will be demoted to
 a replica and the replica will the smallest difference to the current master
 will be kept.</p>
 <p>While the replica count is controllable on a per-volume basis, some
-environments may prefer to set <a href="https://ondat.github.io/v2.2/docs/reference/labels/#storageos-storageclass-labels">default labels on the StorageClass</a>.</p>
+environments may prefer to set <a href="https://docs.ondat.io/v2.2/docs/reference/labels/#storageos-storageclass-labels">default labels on the StorageClass</a>.</p>
 <h3 id="number-of-nodes">Number of nodes</h3>
 <p>Ondat replicas are distributed across available nodes. When a node fails,
 a new replica is provisioned and synced as described above. Failure to

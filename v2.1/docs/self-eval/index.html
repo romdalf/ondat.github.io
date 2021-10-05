@@ -24,7 +24,7 @@
 <meta property="og:description" content="Step-by-step guide to installing and evaluating Ondat
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.1/docs/self-eval/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.1/docs/self-eval/" />
 
 <meta itemprop="name" content="Self Evaluation Guide">
 <meta itemprop="description" content="Step-by-step guide to installing and evaluating Ondat
@@ -142,7 +142,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -1127,14 +1127,14 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.1/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.1/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.1/docs/self-eval/">Self Evaluation Guide</a>
+	<a href="https://docs.ondat.io/v2.1/docs/self-eval/">Self Evaluation Guide</a>
 </li>
 
 	</ol>
@@ -1152,7 +1152,7 @@ Ondat. This guide is divided into three sections:</p>
 <li><strong>Benchmarking</strong> - a recipe to benchmark Ondat on your infrastructure</li>
 </ul>
 <p>For more comprehensive documentation including installation advice for complex
-setups, operational guides, and use-cases, please see our main <a href="https://ondat.github.io/v2.1/docs/">documentation
+setups, operational guides, and use-cases, please see our main <a href="https://docs.ondat.io/v2.1/docs/">documentation
 site</a>.</p>
 <h2 id="support-for-self-evaluations">Support for Self Evaluations</h2>
 <p>Should you have questions or require support, there are several ways to get in
@@ -1178,7 +1178,7 @@ hbspt.forms.create({
 purposes. The etcd we install uses a 3 node cluster with ephemeral storage, and
 as such is not suitable for production workloads. However, for evaluation
 purposes it should be sufficient. For production deployments, please see our
-main <a href="https://ondat.github.io/v2.1/docs/prerequisites/etcd/">documentation pages</a>.</p>
+main <a href="https://docs.ondat.io/v2.1/docs/prerequisites/etcd/">documentation pages</a>.</p>
 <p>A standard Ondat installation uses the Ondat operator, which performs
 most platform-specific configuration for you. The Ondat operator has been
 certified by <a href="https://storageos.com/red-hat/">Red Hat</a> and is <a href="https://github.com/storageos/cluster-operator">open
@@ -1187,7 +1187,7 @@ source</a>.</p>
 <ul>
 <li>Check prerequisites</li>
 <li>Install an etcd cluster</li>
-<li>Install the <a href="https://ondat.github.io/v2.1/docs/reference/cluster-operator/">Ondat Operator</a></li>
+<li>Install the <a href="https://docs.ondat.io/v2.1/docs/reference/cluster-operator/">Ondat Operator</a></li>
 <li>Install Ondat by applying a CR for the Operator to action</li>
 </ul>
 <h2 id="a-nameprerequisitesaprerequisites"><a name='Prerequisites'></a>Prerequisites</h2>
@@ -1203,7 +1203,7 @@ linux-image-extra for Ubuntu.</li>
 <li>Mainline kernel modules <code>target_core_mod</code>, <code>tcp_loop</code>, <code>target_core_file</code>,
 <code>target_core_user</code>, <code>configfs</code>, and <code>ui</code>. These are present by default on
 most modern linux distributions, and can be installed with standard package
-managers. See our <a href="https://ondat.github.io/v2.1/docs/prerequisites/systemconfiguration/">system configuration</a> page for instructions.</li>
+managers. See our <a href="https://docs.ondat.io/v2.1/docs/prerequisites/systemconfiguration/">system configuration</a> page for instructions.</li>
 </ul>
 <h2 id="a-namequick-installationaquick-installation"><a name='Quick Installation'></a>Quick Installation</h2>
 <p>For those feeling brave and/or lucky, we have encapsulated the installation
@@ -1220,7 +1220,7 @@ set for your Kubernetes cluster</p>
 <strong>suitable for evaluation purposes only</strong>. Do not use this cluster for
 production workloads.</p>
 <p>Your new cluster can be used straight away. You can now jump to the
-<a href="https://ondat.github.io/v2.1/docs/self-eval/#StorageOSVolume">Provision a Volume</a> section below to provision your first volume and license
+<a href="https://docs.ondat.io/v2.1/docs/self-eval/#StorageOSVolume">Provision a Volume</a> section below to provision your first volume and license
 the cluster.</p>
 <h2 id="a-namestepbystepainstalling-ondat-step-by-step"><a name='StepByStep'></a>Installing Ondat Step By Step</h2>
 <p>This section describes the installation steps in some more detail.</p>
@@ -1228,7 +1228,7 @@ the cluster.</p>
 <p>Here we install a 3 node etcd cluster using the CoreOS operator to install on
 ephemeral storage within your Kubernetes cluster. This is suitable for
 evaluation purposes. For production deployment instructions, please see our
-<a href="https://ondat.github.io/v2.1/docs/prerequisites/etcd/">production etcd</a> page.</p>
+<a href="https://docs.ondat.io/v2.1/docs/prerequisites/etcd/">production etcd</a> page.</p>
 <ol>
 <li>
 <p>Download repo</p>
@@ -1517,7 +1517,7 @@ For convenience, it is often easiest to port forward the service using the
 following kubectl incantation (this will block, so a second terminal window may
 be advisable):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl port-forward -n kube-system svc/storageos <span style="color:#0000cf;font-weight:bold">5705</span>
-</code></pre></div><p>Now follow the instructions on our <a href="https://ondat.github.io/v2.1/docs/operations/licensing/">operations licensing</a> page to obtain and apply a license.</p>
+</code></pre></div><p>Now follow the instructions on our <a href="https://docs.ondat.io/v2.1/docs/operations/licensing/">operations licensing</a> page to obtain and apply a license.</p>
 <p>Installation of Ondat is now complete.</p>
 <h1 id="a-namestorageosfeaturesaondat-features"><a name='StorageOSFeatures'></a>Ondat Features</h1>
 <p>Now that you have a fully functional Ondat cluster we will explain
@@ -1703,7 +1703,7 @@ low blocksize</li>
 <p>For convenience we present a single script to run the scenarios using local and
 remote volumes both with and without a replica. Deploy the FIO tests for the
 four scenarios using the following command:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -sL https://ondat.github.io/v2.1/sh/deploy-synthetic-benchmarks.sh <span style="color:#000;font-weight:bold">|</span> bash
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -sL https://docs.ondat.io/v2.1/sh/deploy-synthetic-benchmarks.sh <span style="color:#000;font-weight:bold">|</span> bash
 </code></pre></div><p>The script will take approximately 20 minutes to complete, and will print the
 results to STDOUT.</p>
 <p>The exact results observed will depend on the particular platform and

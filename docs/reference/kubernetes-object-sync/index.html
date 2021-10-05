@@ -24,7 +24,7 @@
 <meta property="og:description" content="The below controllers are part of the Ondat API manager, and handle a variety of cases where information about Kubernetes objects from your cluster needs to be synced to your Ondat cluster.
 The CSI Driver annotation mentioned below is added to your PVC or Node automatically by Ondat and is not removed. It is set by default in the case of a PVC StorageClass or PVC&rsquo;s StorageClassName parameter, or in the case of a node, by the node driver registrar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/docs/reference/kubernetes-object-sync/" />
+<meta property="og:url" content="https://docs.ondat.io/docs/reference/kubernetes-object-sync/" />
 
 <meta itemprop="name" content="Kubernetes Object Sync">
 <meta itemprop="description" content="The below controllers are part of the Ondat API manager, and handle a variety of cases where information about Kubernetes objects from your cluster needs to be synced to your Ondat cluster.
@@ -142,7 +142,7 @@ The CSI Driver annotation mentioned below is added to your PVC or Node automatic
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ The CSI Driver annotation mentioned below is added to your PVC or Node automatic
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -1296,21 +1296,21 @@ The CSI Driver annotation mentioned below is added to your PVC or Node automatic
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/reference/">Reference</a>
+	<a href="https://docs.ondat.io/docs/reference/">Reference</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/docs/reference/kubernetes-object-sync/">Kubernetes Object Sync</a>
+	<a href="https://docs.ondat.io/docs/reference/kubernetes-object-sync/">Kubernetes Object Sync</a>
 </li>
 
 	</ol>
@@ -1320,17 +1320,17 @@ The CSI Driver annotation mentioned below is added to your PVC or Node automatic
 <div class="td-content">
 	<h1>Kubernetes Object Sync</h1>
 	
-	<p>The below controllers are part of the <a href="https://ondat.github.io/docs/concepts/components/">Ondat API manager</a>, and handle a variety of cases where
+	<p>The below controllers are part of the <a href="https://docs.ondat.io/docs/concepts/components/">Ondat API manager</a>, and handle a variety of cases where
 information about Kubernetes objects from your cluster needs to be synced to
 your Ondat cluster.</p>
 <p>The CSI Driver annotation mentioned below is added to your PVC or Node
 automatically by Ondat and is not removed. It is set by default in the case
-of a PVC <a href="https://ondat.github.io/docs/operations/storageclasses/">StorageClass</a> or
+of a PVC <a href="https://docs.ondat.io/docs/operations/storageclasses/">StorageClass</a> or
 PVC&rsquo;s StorageClassName parameter, or in the case of a node, by the node driver
 registrar.</p>
 <h2 id="pvc-label-sync">PVC Label Sync</h2>
 <p>The PVC Label Sync Controller applies labels that have been added to your PVCs
-to your <a href="https://ondat.github.io/docs/concepts/volumes/">Ondat Volume objects</a>. The
+to your <a href="https://docs.ondat.io/docs/concepts/volumes/">Ondat Volume objects</a>. The
 PVC must have the Ondat CSI Driver annotation. If there is a label with the
 same key on the PVC and on the StorageClass the PVC label will take precedence.</p>
 <p>Ondat dynamically provisions Ondat Volumes when you create a PVC
@@ -1344,7 +1344,7 @@ resync runs every hour (this is configurable via <code>-pvc-label-resync-interva
 flag for the <a href="https://github.com/storageos/api-manager">API Manager</a>).</p>
 <h2 id="node-label-sync">Node Label Sync</h2>
 <p>The Node Label Sync controller ensures that labels applied to your Kubernetes
-nodes are synced through to Ondat. It is necessary for your <a href="https://ondat.github.io/docs/concepts/nodes/">Node</a> to have the Ondat CSI Driver annotation.</p>
+nodes are synced through to Ondat. It is necessary for your <a href="https://docs.ondat.io/docs/concepts/nodes/">Node</a> to have the Ondat CSI Driver annotation.</p>
 <p>When labels are applied to your Kubernetes nodes, they do not automatically
 sync to Ondat, hence this controller is required to automatically apply the
 expected behaviour to your Ondat cluster.</p>
@@ -1368,7 +1368,7 @@ This is to prevent data loss by accidental deletion of a master volume.</p>
 Manager</a>.</p>
 <h2 id="namespace-delete">Namespace Delete</h2>
 <p>The Namespace Delete Controller is responsible for removing Ondat
-<a href="https://ondat.github.io/docs/concepts/namespaces/">namespaces</a> from the Ondat
+<a href="https://docs.ondat.io/docs/concepts/namespaces/">namespaces</a> from the Ondat
 cluster when the corresponding Kubernetes namespace has been removed from
 Kubernetes.</p>
 <p>The Ondat controlplane automatically creates a new Ondat namespace when

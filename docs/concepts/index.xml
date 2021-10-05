@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Concepts</title>
-    <link>https://ondat.github.io/docs/concepts/</link>
+    <link>https://docs.ondat.io/docs/concepts/</link>
     <description>Recent content in Concepts on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://ondat.github.io/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.ondat.io/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Cluster Topologies</title>
-      <link>https://ondat.github.io/docs/concepts/cluster-topologies/</link>
+      <link>https://docs.ondat.io/docs/concepts/cluster-topologies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/cluster-topologies/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/cluster-topologies/</guid>
       <description>
         
         
@@ -37,7 +37,7 @@ store and access data on every node.&lt;/p&gt;
 &lt;p&gt;By default we place workloads locally where possible - this means that we
 default to a hybrid of the hyperconverged/high-performance models, maximising
 performance without extra effort.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/concepts/hyperconverged.png&#34; alt=&#34;Hyperconverged Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/concepts/hyperconverged.png&#34; alt=&#34;Hyperconverged Model&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;centralised-storage-model&#34;&gt;Centralised Storage Model&lt;/h2&gt;
 &lt;p&gt;In this cluster topology volume data is placed on a particular subset of nodes,
 while the remaining nodes in your cluster are set to &lt;code&gt;computeonly&lt;/code&gt;, allowing
@@ -49,22 +49,22 @@ nodes and compute workloads can be kept apart.&lt;/p&gt;
 &lt;p&gt;This mode is also very suitable for elastic fleets with burstable workloads. A
 fleet can be expanded with many new machines for computing, while maintaining a
 central data store not impacted by rapid and repeated cluster scaling.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/concepts/centralised.png&#34; alt=&#34;Centralised Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/concepts/centralised.png&#34; alt=&#34;Centralised Model&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;high-performance-mode&#34;&gt;High Performance Mode&lt;/h2&gt;
 &lt;p&gt;In this mode we co-locate pods with the volumes they are using in order to take
 advantage of the performance gains from running on the same node, while
 retaining the utility of orchestrators for managing app lifecycle.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/concepts/high-performance.png&#34; alt=&#34;High Performance Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/concepts/high-performance.png&#34; alt=&#34;High Performance Model&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Clusters</title>
-      <link>https://ondat.github.io/docs/concepts/clusters/</link>
+      <link>https://docs.ondat.io/docs/concepts/clusters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/clusters/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/clusters/</guid>
       <description>
         
         
@@ -81,10 +81,10 @@ nodes.&lt;/p&gt;
     
     <item>
       <title>Docs: Compression</title>
-      <link>https://ondat.github.io/docs/concepts/compression/</link>
+      <link>https://docs.ondat.io/docs/concepts/compression/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/compression/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/compression/</guid>
       <description>
         
         
@@ -93,10 +93,10 @@ default in v2.2+, as performance is generally increased when compression is
 disabled due to block alignment. This means that there is a trade
 off between volume performance and the space the volume occupies on the backend
 device.&lt;/p&gt;
-&lt;p&gt;Compression can be enabled by setting the &lt;a href=&#34;https://ondat.github.io/docs/reference/labels&#34;&gt;label&lt;/a&gt;
+&lt;p&gt;Compression can be enabled by setting the &lt;a href=&#34;https://docs.ondat.io/docs/reference/labels&#34;&gt;label&lt;/a&gt;
 &lt;code&gt;storageos.com/nocompress=false&lt;/code&gt; on a volume at volume creation time.&lt;/p&gt;
 &lt;p&gt;Ondat utilises the &lt;a href=&#34;https://lz4.github.io/lz4/&#34;&gt;lz4 compression algorithm&lt;/a&gt;
-when writing to the backend store and when compressing &lt;a href=&#34;https://ondat.github.io/docs/concepts/replication&#34;&gt;replication
+when writing to the backend store and when compressing &lt;a href=&#34;https://docs.ondat.io/docs/concepts/replication&#34;&gt;replication
 traffic&lt;/a&gt; before it is sent across the network.&lt;/p&gt;
 &lt;p&gt;Ondat detects whether a block can be compressed or not by creating a
 heuristic that predicts the size of a compressed block. If the heuristic
@@ -108,7 +108,7 @@ increased and CPU resources are not wasted on attempts to compress
 uncompressible blocks. Ondat&amp;rsquo;s patented on-disk format is used to tell
 whether individual blocks are compressed without overhead. As such volume
 compression can be dynamically enabled/disabled even while a volume is in use.&lt;/p&gt;
-&lt;p&gt;When compression and &lt;a href=&#34;https://ondat.github.io/docs/concepts/encryption&#34;&gt;encryption&lt;/a&gt; are both enabled
+&lt;p&gt;When compression and &lt;a href=&#34;https://docs.ondat.io/docs/concepts/encryption&#34;&gt;encryption&lt;/a&gt; are both enabled
 for a volume, blocks are compressed then encrypted.&lt;/p&gt;
 
       </description>
@@ -116,10 +116,10 @@ for a volume, blocks are compressed then encrypted.&lt;/p&gt;
     
     <item>
       <title>Docs: Etcd</title>
-      <link>https://ondat.github.io/docs/concepts/etcd/</link>
+      <link>https://docs.ondat.io/docs/concepts/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/etcd/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/etcd/</guid>
       <description>
         
         
@@ -136,7 +136,7 @@ allowing offlined nodes to rejoin the cluster.&lt;/p&gt;
 &lt;p&gt;N.B. Ondat v2.0 does not provide an embedded etcd server as previous
 versions did. You will need to setup an etcd server for Ondat to use
 prior to installation of Ondat. For more information on how
-to install and configure etcd, see our &lt;a href=&#34;https://ondat.github.io/docs/prerequisites/etcd/&#34;&gt;etcd prerequisites&lt;/a&gt; page.&lt;/p&gt;
+to install and configure etcd, see our &lt;a href=&#34;https://docs.ondat.io/docs/prerequisites/etcd/&#34;&gt;etcd prerequisites&lt;/a&gt; page.&lt;/p&gt;
 &lt;/blockquote&gt;
 
       </description>
@@ -144,10 +144,10 @@ to install and configure etcd, see our &lt;a href=&#34;https://ondat.github.io/d
     
     <item>
       <title>Docs: Fencing</title>
-      <link>https://ondat.github.io/docs/concepts/fencing/</link>
+      <link>https://docs.ondat.io/docs/concepts/fencing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/fencing/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/fencing/</guid>
       <description>
         
         
@@ -224,7 +224,7 @@ pre-provisioned volumes.&lt;/p&gt;
 &lt;p&gt;The fencing feature is opt-in and Pods must have the
 &lt;code&gt;storageos.com/fenced=true&lt;/code&gt; label set, and be using at least one Ondat
 volume, to enable fast failover.&lt;/p&gt;
-&lt;p&gt;For more information about how to enable pod fencing, see our &lt;a href=&#34;https://ondat.github.io/docs/operations/fencing/&#34;&gt;Fencing
+&lt;p&gt;For more information about how to enable pod fencing, see our &lt;a href=&#34;https://docs.ondat.io/docs/operations/fencing/&#34;&gt;Fencing
 Operations&lt;/a&gt; page.&lt;/p&gt;
 
       </description>
@@ -232,10 +232,10 @@ Operations&lt;/a&gt; page.&lt;/p&gt;
     
     <item>
       <title>Docs: Namespaces</title>
-      <link>https://ondat.github.io/docs/concepts/namespaces/</link>
+      <link>https://docs.ondat.io/docs/concepts/namespaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/namespaces/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/namespaces/</guid>
       <description>
         
         
@@ -245,17 +245,17 @@ multiple projects.&lt;/p&gt;
 &lt;p&gt;It is not necessary to create Ondat namespaces manually, as Ondat maps
 Kubernetes namespaces on a one-to-one basis when PersistentVolumeClaims using
 the Ondat StorageClass are created.&lt;/p&gt;
-&lt;p&gt;Access to Namespaces is controlled through user or group level &lt;a href=&#34;https://ondat.github.io/docs/concepts/policies/&#34;&gt;policies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Access to Namespaces is controlled through user or group level &lt;a href=&#34;https://docs.ondat.io/docs/concepts/policies/&#34;&gt;policies&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Nodes</title>
-      <link>https://ondat.github.io/docs/concepts/nodes/</link>
+      <link>https://docs.ondat.io/docs/concepts/nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/nodes/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/nodes/</guid>
       <description>
         
         
@@ -283,7 +283,7 @@ host applications that require Ondat volumes. The nodes that are not
 intended to hold data, but just to present Ondat volumes, can be set as
 &lt;code&gt;computeonly&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A node can be marked as compute only at any point in time by adding the label
-&lt;code&gt;storageos.com/computeonly=true&lt;/code&gt;, following the &lt;a href=&#34;https://ondat.github.io/docs/reference/labels/&#34;&gt;labels reference&lt;/a&gt;.&lt;/p&gt;
+&lt;code&gt;storageos.com/computeonly=true&lt;/code&gt;, following the &lt;a href=&#34;https://docs.ondat.io/docs/reference/labels/&#34;&gt;labels reference&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;storage-mode&#34;&gt;Storage Mode&lt;/h2&gt;
 &lt;p&gt;Finally, nodes can be set to storage mode. Nodes set to storage mode don&amp;rsquo;t
 present data locally - instead all data is accessed through the network. This
@@ -299,10 +299,10 @@ several nodes running in this mode.&lt;/p&gt;
     
     <item>
       <title>Docs: Ondat Components</title>
-      <link>https://ondat.github.io/docs/concepts/components/</link>
+      <link>https://docs.ondat.io/docs/concepts/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/components/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/components/</guid>
       <description>
         
         
@@ -312,10 +312,10 @@ applications in Kubernetes.&lt;/p&gt;
 Ondat cluster to create and present virtual volumes into containers. Space
 on the host is consumed from the mount point &lt;code&gt;/var/lib/storageos/data&lt;/code&gt;, so it
 is therefore recommended that disk devices are used exclusively for Ondat,
-as described in &lt;a href=&#34;https://ondat.github.io/docs/operations/managing-host-storage/&#34;&gt;Managing Host Storage &lt;/a&gt;&lt;/p&gt;
+as described in &lt;a href=&#34;https://docs.ondat.io/docs/operations/managing-host-storage/&#34;&gt;Managing Host Storage &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ondat is agnostic to the underlying storage and runs equally well on
 bare metal, in virtual machines or on cloud providers.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/concepts/storageos-cluster.png&#34; alt=&#34;Ondat cluster components&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/concepts/storageos-cluster.png&#34; alt=&#34;Ondat cluster components&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Read about &lt;a href=&#34;https://storageos.com/storageos-cloud-native-storage&#34;&gt;the cloud native storage principles behind
 Ondat&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;ondat-on-kubernetes&#34;&gt;Ondat on Kubernetes&lt;/h3&gt;
@@ -371,7 +371,7 @@ or present storage. The Scheduler, CSI helper, Cluster Operator and API Manager
 run as separate pods and are controlled as deployments.&lt;/p&gt;
 &lt;p&gt;Ondat is designed to feel familiar to Kubernetes and Docker users. Storage
 is managed through standard StorageClasses and PersistentVolumeClaims, and
-&lt;a href=&#34;https://ondat.github.io/docs/reference/labels/&#34;&gt;features&lt;/a&gt; are controlled by
+&lt;a href=&#34;https://docs.ondat.io/docs/reference/labels/&#34;&gt;features&lt;/a&gt; are controlled by
 Kubernetes-style labels and selectors, prefixed with &lt;code&gt;storageos.com/&lt;/code&gt;. By
 default, volumes are cached to improve read performance and compressed to
 reduce network traffic.&lt;/p&gt;
@@ -385,32 +385,32 @@ restarted on any node and access volumes transparently.&lt;/p&gt;
     
     <item>
       <title>Docs: Policies</title>
-      <link>https://ondat.github.io/docs/concepts/policies/</link>
+      <link>https://docs.ondat.io/docs/concepts/policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/policies/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/policies/</guid>
       <description>
         
         
         &lt;p&gt;Ondat policies are a way to control user and group access to Ondat
-&lt;a href=&#34;https://ondat.github.io/docs/concepts/namespaces/&#34;&gt;Namespaces&lt;/a&gt;. To grant a user or group
+&lt;a href=&#34;https://docs.ondat.io/docs/concepts/namespaces/&#34;&gt;Namespaces&lt;/a&gt;. To grant a user or group
 access to a namespace, a policy needs to be created mapping the user or group
 to the namespace.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note: Users always have access to the default namespace&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For more information on how to use policies, see the
-&lt;a href=&#34;https://ondat.github.io/docs/operations/policies/&#34;&gt;Policies operations&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://docs.ondat.io/docs/operations/policies/&#34;&gt;Policies operations&lt;/a&gt; page.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: ReadWriteMany</title>
-      <link>https://ondat.github.io/docs/concepts/rwx/</link>
+      <link>https://docs.ondat.io/docs/concepts/rwx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/rwx/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/rwx/</guid>
       <description>
         
         
@@ -426,7 +426,7 @@ implementation, this is NFS.&lt;/p&gt;
 &lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
 &lt;p&gt;For each RWX Volume, the following components are involved:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ondat ReadWriteOnly (RWO) Volume&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Ondat provisions a standard &lt;a href=&#34;https://ondat.github.io/docs/concepts/volumes/&#34;&gt;Volume&lt;/a&gt; that provides a block device for the file system of the NFS server. This
+&lt;p&gt;Ondat provisions a standard &lt;a href=&#34;https://docs.ondat.io/docs/concepts/volumes/&#34;&gt;Volume&lt;/a&gt; that provides a block device for the file system of the NFS server. This
 means that every RWX Volume has its own RWO Volume. This allows RWX Volumes to
 leverage the synchronous replication and automatic failover functionality of
 Ondat, providing the NFS server with high availability.&lt;/p&gt;
@@ -437,7 +437,7 @@ server uses its own RWO Volume to store data so the data of each Volume is
 isolated.&lt;/p&gt;
 &lt;p&gt;Ondat binds an ephemeral port to the host network interface for each
 NFS-Ganesha server. The NFS export is presented using NFS v4.2. Check the
-&lt;a href=&#34;https://ondat.github.io/docs/prerequisites/firewalls/&#34;&gt;prerequisites page&lt;/a&gt; to see the
+&lt;a href=&#34;https://docs.ondat.io/docs/prerequisites/firewalls/&#34;&gt;prerequisites page&lt;/a&gt; to see the
 range of ports needed for Ondat RWX Volumes.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ondat API Manager&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ondat fully integrates with Kubernetes. The Ondat API Manager Pod
@@ -475,7 +475,7 @@ application Node (where the user&amp;rsquo;s Pod is running) automatically recon
 &lt;li&gt;A Ondat RWX Volume is matched one-to-one with a PVC. Therefore the
 Ondat RWX Volume can only be accessed by Pods in the same Kubernetes
 namespace.&lt;/li&gt;
-&lt;li&gt;Ondat RWX Volumes support volume resize. Refer to the &lt;a href=&#34;https://ondat.github.io/docs/operations/resize/&#34;&gt;resize&lt;/a&gt; documentation for more details.&lt;/li&gt;
+&lt;li&gt;Ondat RWX Volumes support volume resize. Refer to the &lt;a href=&#34;https://docs.ondat.io/docs/operations/resize/&#34;&gt;resize&lt;/a&gt; documentation for more details.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -483,10 +483,10 @@ namespace.&lt;/li&gt;
     
     <item>
       <title>Docs: Replication</title>
-      <link>https://ondat.github.io/docs/concepts/replication/</link>
+      <link>https://docs.ondat.io/docs/concepts/replication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/replication/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/replication/</guid>
       <description>
         
         
@@ -499,7 +499,7 @@ replicas. Each volume can be replicated between 0 and 5 times, which are
 provisioned to 0 to 5 nodes, up to the number of remaining nodes in the cluster.&lt;/p&gt;
 &lt;p&gt;In this diagram, the master volume &lt;code&gt;D&lt;/code&gt; was created on node 1, and two replicas,
 &lt;code&gt;D2&lt;/code&gt; and &lt;code&gt;D3&lt;/code&gt; on nodes 3 and 5.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ondat.github.io/images/docs/concepts/high-availability.png&#34; alt=&#34;Ondat replication&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.ondat.io/images/docs/concepts/high-availability.png&#34; alt=&#34;Ondat replication&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Writes that come into &lt;code&gt;D&lt;/code&gt; (step 1) are written in parallel to &lt;code&gt;D2&lt;/code&gt; and &lt;code&gt;D3&lt;/code&gt;
 (step 2). When both replicas and the master acknowledge that the data has been
 written (step 3), the write operation return successfully to the application
@@ -522,7 +522,7 @@ begin to sync. Should the former master come back online it will be demoted to
 a replica and the replica will the smallest difference to the current master
 will be kept.&lt;/p&gt;
 &lt;p&gt;While the replica count is controllable on a per-volume basis, some
-environments may prefer to set &lt;a href=&#34;https://ondat.github.io/docs/reference/labels/#storageos-storageclass-labels&#34;&gt;default labels on the StorageClass&lt;/a&gt;.&lt;/p&gt;
+environments may prefer to set &lt;a href=&#34;https://docs.ondat.io/docs/reference/labels/#storageos-storageclass-labels&#34;&gt;default labels on the StorageClass&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;delta-sync&#34;&gt;Delta Sync&lt;/h2&gt;
 &lt;p&gt;Ondat implements a delta sync between a volume master and its replicas.
 This means that if a replica for a volume goes offline, that when the replica
@@ -592,17 +592,17 @@ to be available.&lt;/p&gt;
 the cost of reliability. The minimum node count here is 1 as the loss of all
 replicas will be tolerated.&lt;/p&gt;
 &lt;p&gt;Minimum number of storage nodes = 1 (primary)&lt;/p&gt;
-&lt;p&gt;For details about how to use the labels on the VolumesCheck, see the &lt;a href=&#34;https://ondat.github.io/docs/operations/failure-modes/&#34;&gt;failure modes operations&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;For details about how to use the labels on the VolumesCheck, see the &lt;a href=&#34;https://docs.ondat.io/docs/operations/failure-modes/&#34;&gt;failure modes operations&lt;/a&gt; page.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Volumes</title>
-      <link>https://ondat.github.io/docs/concepts/volumes/</link>
+      <link>https://docs.ondat.io/docs/concepts/volumes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/docs/concepts/volumes/</guid>
+      <guid>https://docs.ondat.io/docs/concepts/volumes/</guid>
       <description>
         
         
@@ -615,7 +615,7 @@ format. Depending on the configuration, frontend and backend components may be
 on the same or different hosts.&lt;/p&gt;
 &lt;p&gt;Volumes are formatted using the linux standard ext4 filesystem by default.
 Kubernetes users may change the default filesystem type to ext2, ext3, ext4, or
-xfs by setting the fsType parameter in their StorageClass (see &lt;a href=&#34;https://ondat.github.io/docs/reference/filesystems/#persistent-volume-filesystems&#34;&gt;Supported
+xfs by setting the fsType parameter in their StorageClass (see &lt;a href=&#34;https://docs.ondat.io/docs/reference/filesystems/#persistent-volume-filesystems&#34;&gt;Supported
 Filesystems&lt;/a&gt; for more
 information). Different filesystems may be supported in the future.&lt;/p&gt;
 &lt;p&gt;Ondat volumes are represented on disk in two parts. Actual volume data is
@@ -647,7 +647,7 @@ node.&lt;/p&gt;
 deleted blocks to be reclaimed from the backend blob files that back each
 volume when a TRIM call is made. Support for TRIM is enabled by default for all
 uncompressed volumes, volumes are created without compression enabled by
-default. For more information on how to TRIM a filesystem, see &lt;a href=&#34;https://ondat.github.io/docs/operations/trim/&#34;&gt;TRIM
+default. For more information on how to TRIM a filesystem, see &lt;a href=&#34;https://docs.ondat.io/docs/operations/trim/&#34;&gt;TRIM
 operations&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;volume-resize&#34;&gt;Volume Resize&lt;/h2&gt;
 &lt;p&gt;Ondat v2.1 supports offline resize of volumes. This means that a volume
@@ -660,12 +660,12 @@ pod is terminated and the volume is detached from the node. The Ondat
 controlplane will then attach the volume to the node that holds the master
 deployment and resize the underlying block device and then run resize2fs to
 expand the filesystem.&lt;/p&gt;
-&lt;p&gt;For a walk through of how to resize a volume please see the &lt;a href=&#34;https://ondat.github.io/docs/operations/resize/&#34;&gt;Volume
+&lt;p&gt;For a walk through of how to resize a volume please see the &lt;a href=&#34;https://docs.ondat.io/docs/operations/resize/&#34;&gt;Volume
 Resize&lt;/a&gt; operations page.&lt;/p&gt;
 &lt;h2 id=&#34;volume-encryption&#34;&gt;Volume Encryption&lt;/h2&gt;
 &lt;p&gt;Volumes can be configured on creation to have encryption-at-rest. Data
 is encrypted with XTS-AES and decrypted upon use. Please see
-the &lt;a href=&#34;https://ondat.github.io/docs/reference/encryption/&#34;&gt;Encryption&lt;/a&gt; reference page for
+the &lt;a href=&#34;https://docs.ondat.io/docs/reference/encryption/&#34;&gt;Encryption&lt;/a&gt; reference page for
 more information.&lt;/p&gt;
 
       </description>

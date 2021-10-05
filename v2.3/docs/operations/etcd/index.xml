@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Etcd</title>
-    <link>https://ondat.github.io/v2.3/docs/operations/etcd/</link>
+    <link>https://docs.ondat.io/v2.3/docs/operations/etcd/</link>
     <description>Recent content in Etcd on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://ondat.github.io/v2.3/docs/operations/etcd/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.ondat.io/v2.3/docs/operations/etcd/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Etcd node migration</title>
-      <link>https://ondat.github.io/v2.3/docs/operations/etcd/migrate-etcd-cluster/</link>
+      <link>https://docs.ondat.io/v2.3/docs/operations/etcd/migrate-etcd-cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.3/docs/operations/etcd/migrate-etcd-cluster/</guid>
+      <guid>https://docs.ondat.io/v2.3/docs/operations/etcd/migrate-etcd-cluster/</guid>
       <description>
         
         
@@ -27,7 +27,7 @@ cluster while removing one of the current members. This is useful when the
 nodes hosting etcd must be recycled.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;It is assumed&lt;/strong&gt; that the Ondat etcd cluster is installed following the
-&lt;a href=&#34;https://ondat.github.io/v2.3/docs/prerequisites/etcd/#production&#34;&gt;production etcd installation&lt;/a&gt;
+&lt;a href=&#34;https://docs.ondat.io/v2.3/docs/prerequisites/etcd/#production&#34;&gt;production etcd installation&lt;/a&gt;
 page, where etcd nodes are installed on their own machines.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -43,7 +43,7 @@ urls created.&lt;/p&gt;
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 &lt;p&gt;Prepare the installation of etcd on a new node, &lt;strong&gt;making sure that etcd is not
 starting&lt;/strong&gt; on that new node.&lt;/p&gt;
-&lt;p&gt;The steps for preparing an etcd node can be found in the &lt;a href=&#34;https://ondat.github.io/v2.3/docs/prerequisites/etcd/#production&#34;&gt;etcd
+&lt;p&gt;The steps for preparing an etcd node can be found in the &lt;a href=&#34;https://docs.ondat.io/v2.3/docs/prerequisites/etcd/#production&#34;&gt;etcd
 prerequisites&lt;/a&gt;
 page.&lt;/p&gt;
 &lt;ol&gt;
@@ -316,10 +316,10 @@ file up to date.&lt;/p&gt;
     
     <item>
       <title>Docs: Encrypting communication with Etcd</title>
-      <link>https://ondat.github.io/v2.3/docs/operations/etcd/storageos-secret-info/</link>
+      <link>https://docs.ondat.io/v2.3/docs/operations/etcd/storageos-secret-info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.3/docs/operations/etcd/storageos-secret-info/</guid>
+      <guid>https://docs.ondat.io/v2.3/docs/operations/etcd/storageos-secret-info/</guid>
       <description>
         
         

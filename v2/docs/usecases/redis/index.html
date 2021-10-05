@@ -27,7 +27,7 @@ Deploying Redis on Kubernetes   You can find the latest files in the Ondat use c
 git clone https://github.com/storageos/use-cases.git storageos-usecases StatefulSet defintion
 kind:StatefulSetmetadata:name:redisspec:selector:matchLabels:app:redisenv:prodserviceName:redisreplicas:1...spec:serviceAccountName:redis...volumeMounts:- name:datamountPath:/bitnami/redis/data...volumeClaimTemplates:- metadata:name:datalabels:env:prodspec:accessModes:[&#34;ReadWriteOnce&#34;]storageClassName:&#34;fast&#34;# Ondat storageClass resources:requests:storage:5GiThis excerpt is from the StatefulSet definition." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2/docs/usecases/redis/" />
+<meta property="og:url" content="https://docs.ondat.io/v2/docs/usecases/redis/" />
 
 <meta itemprop="name" content="Redis">
 <meta itemprop="description" content="Redis with Ondat Redis is a popular networked, in-memory, key-value data store with optional durability to disk.
@@ -1088,21 +1088,21 @@ kind:StatefulSetmetadata:name:redisspec:selector:matchLabels:app:redisenv:prodse
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/usecases/">Use Cases</a>
+	<a href="https://docs.ondat.io/v2/docs/usecases/">Use Cases</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2/docs/usecases/redis/">Redis</a>
+	<a href="https://docs.ondat.io/v2/docs/usecases/redis/">Redis</a>
 </li>
 
 	</ol>
@@ -1115,7 +1115,7 @@ kind:StatefulSetmetadata:name:redisspec:selector:matchLabels:app:redisenv:prodse
 	<h1><img src="/images/docs/explore/redis.png" width="125" height="125"> Redis with Ondat</h1>
 <p>Redis is a popular networked, in-memory, key-value data store with optional durability to disk.</p>
 <p>Before you start, ensure you have Ondat installed and ready on a Kubernetes
-cluster. <a href="https://ondat.github.io/v2/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
+cluster. <a href="https://docs.ondat.io/v2/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
 information</a>.</p>
 <h2 id="deploying-redis-on-kubernetes">Deploying Redis on Kubernetes</h2>
 <ol>

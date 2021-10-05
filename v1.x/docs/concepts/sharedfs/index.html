@@ -25,7 +25,7 @@
  Shared Filesystem support allows volumes to be mounted for read &amp; write access by multiple containers simultaneously, even from different nodes. In Kubernetes, shared filesystems are referred to as ReadWriteMany or RWX volumes.
 Follow the Operations page to learn how to deploy and use ReadWriteMany PersistentVolumeClaims (PVCs)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v1.x/docs/concepts/sharedfs/" />
+<meta property="og:url" content="https://docs.ondat.io/v1.x/docs/concepts/sharedfs/" />
 
 <meta itemprop="name" content="Shared Filesystem">
 <meta itemprop="description" content="Shared filesystems in the 1.5.4 release are currently in Technology Preview. This experimental feature is not yet intended for production use.
@@ -145,7 +145,7 @@ Follow the Operations page to learn how to deploy and use ReadWriteMany Persiste
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v1.x/offline-search-index.dd541beb70815078978276c1c1cc979a2f61de84240029223258e66acd90a4a73fad6da816c10ac3ff26f750139b40061ce1a00a8566c2934e92cf2803cf4c5a.json"
+  data-offline-search-index-json-src="/v1.x/offline-search-index.7d3c4919bde3be16493f86e8a3a781c63ba3b323e3f7afdd20b0c639e17a5a6683f90683bbecca534e049ae4ece2ce81d4b75b988686211b100e6c1c2ed50c5c.json"
   data-offline-search-base-href="/"
 >
 
@@ -293,7 +293,7 @@ Follow the Operations page to learn how to deploy and use ReadWriteMany Persiste
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v1.x/offline-search-index.dd541beb70815078978276c1c1cc979a2f61de84240029223258e66acd90a4a73fad6da816c10ac3ff26f750139b40061ce1a00a8566c2934e92cf2803cf4c5a.json"
+  data-offline-search-index-json-src="/v1.x/offline-search-index.7d3c4919bde3be16493f86e8a3a781c63ba3b323e3f7afdd20b0c639e17a5a6683f90683bbecca534e049ae4ece2ce81d4b75b988686211b100e6c1c2ed50c5c.json"
   data-offline-search-base-href="/"
 >
 
@@ -1227,21 +1227,21 @@ Follow the Operations page to learn how to deploy and use ReadWriteMany Persiste
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v1.x/docs/">Documentation V1</a>
+	<a href="https://docs.ondat.io/v1.x/docs/">Documentation V1</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v1.x/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/v1.x/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v1.x/docs/concepts/sharedfs/">Shared Filesystem - RWX</a>
+	<a href="https://docs.ondat.io/v1.x/docs/concepts/sharedfs/">Shared Filesystem - RWX</a>
 </li>
 
 	</ol>
@@ -1260,7 +1260,7 @@ intended for production use.</p>
 by multiple containers simultaneously, even from different nodes.  In
 Kubernetes, shared filesystems are referred to as <code>ReadWriteMany</code> or RWX
 volumes.</p>
-<p>Follow the <a href="https://ondat.github.io/v1.x/docs/operations/sharedfs/">Operations page</a> to learn
+<p>Follow the <a href="https://docs.ondat.io/v1.x/docs/operations/sharedfs/">Operations page</a> to learn
 how to deploy and use <code>ReadWriteMany</code> PersistentVolumeClaims (PVCs).</p>
 <h2 id="architecture">Architecture</h2>
 <p>The default Ondat StorageClass can create volumes with either
@@ -1314,14 +1314,14 @@ RWX volume for the first time as the NFS server image has to be pulled.</p>
 therefore the Ondat API will not report on shared volumes.</p>
 </blockquote>
 <h2 id="labels">Labels</h2>
-<p>Ondat uses labels to apply behaviour regarding the Volumes. <a href="https://ondat.github.io/v1.x/docs/reference/labels/">Feature
+<p>Ondat uses labels to apply behaviour regarding the Volumes. <a href="https://docs.ondat.io/v1.x/docs/reference/labels/">Feature
 labels</a> can be passed to the RWX PVC to
 ensure that the underlying Ondat volume backing the NFS server implements
 those features</p>
 <p>For instance, to enable replication, set the label <code>storageos.com/replicas: 1</code>
 in the RWX PVC metadata.</p>
 <h2 id="fencing">Fencing</h2>
-<p>Ondat implements <a href="https://ondat.github.io/v1.x/docs/concepts/fencing/">fencing</a> for
+<p>Ondat implements <a href="https://docs.ondat.io/v1.x/docs/concepts/fencing/">fencing</a> for
 StatefulSet based pods. When replication has been enabled, the NFS server will
 use the fencing feature to ensure rapid failover when the node fails.</p>
 <h2 id="csi">CSI</h2>

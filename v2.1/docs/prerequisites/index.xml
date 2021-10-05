@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Prerequisites</title>
-    <link>https://ondat.github.io/v2.1/docs/prerequisites/</link>
+    <link>https://docs.ondat.io/v2.1/docs/prerequisites/</link>
     <description>Recent content in Prerequisites on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://ondat.github.io/v2.1/docs/prerequisites/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.ondat.io/v2.1/docs/prerequisites/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: System Configuration</title>
-      <link>https://ondat.github.io/v2.1/docs/prerequisites/systemconfiguration/</link>
+      <link>https://docs.ondat.io/v2.1/docs/prerequisites/systemconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.1/docs/prerequisites/systemconfiguration/</guid>
+      <guid>https://docs.ondat.io/v2.1/docs/prerequisites/systemconfiguration/</guid>
       <description>
         
         
@@ -41,7 +41,7 @@ of data. On startup, Ondat will detect if other applications are using
 TCMU and fall back to FUSE. However if Ondat is started first there is no
 mechanism for Ondat to fallback to FUSE if another application begins to
 use TCMU. TCMU can be disabled using the
-&lt;a href=&#34;https://ondat.github.io/v2.1/docs/reference/cluster-operator/configuration&#34;&gt;DISABLE_TCMU&lt;/a&gt;
+&lt;a href=&#34;https://docs.ondat.io/v2.1/docs/reference/cluster-operator/configuration&#34;&gt;DISABLE_TCMU&lt;/a&gt;
 StorageOSCluster spec parameter.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Depending on the distribution, the modules are shipped as part of the
@@ -59,7 +59,7 @@ installed.&lt;/p&gt;
 &lt;p&gt;Ubuntu 16.04/18.04 requires the installation of additional packages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;N.B. Ubuntu 16.04/18.04 AWS and Ubuntu 18.04 GCE do not provide the
-necessary linux-image-extra package - &lt;a href=&#34;https://ondat.github.io/v2.1/docs/prerequisites/systemconfiguration#ubuntu-on-aws-and-gce&#34;&gt;see
+necessary linux-image-extra package - &lt;a href=&#34;https://docs.ondat.io/v2.1/docs/prerequisites/systemconfiguration#ubuntu-on-aws-and-gce&#34;&gt;see
 below&lt;/a&gt; for more information&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;ubuntu-package-installation&#34;&gt;Ubuntu Package Installation&lt;/h2&gt;
@@ -109,10 +109,10 @@ the init container, perform the following steps:&lt;/p&gt;
     
     <item>
       <title>Docs: Firewalls</title>
-      <link>https://ondat.github.io/v2.1/docs/prerequisites/firewalls/</link>
+      <link>https://docs.ondat.io/v2.1/docs/prerequisites/firewalls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.1/docs/prerequisites/firewalls/</guid>
+      <guid>https://docs.ondat.io/v2.1/docs/prerequisites/firewalls/</guid>
       <description>
         
         
@@ -192,10 +192,10 @@ default DROP or REJECT rules.&lt;/p&gt;
     
     <item>
       <title>Docs: Mount Propagation</title>
-      <link>https://ondat.github.io/v2.1/docs/prerequisites/mountpropagation/</link>
+      <link>https://docs.ondat.io/v2.1/docs/prerequisites/mountpropagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.1/docs/prerequisites/mountpropagation/</guid>
+      <guid>https://docs.ondat.io/v2.1/docs/prerequisites/mountpropagation/</guid>
       <description>
         
         
@@ -235,15 +235,15 @@ check and enable mount propagation where appropriate.&lt;/p&gt;
     
     <item>
       <title>Docs: Etcd</title>
-      <link>https://ondat.github.io/v2.1/docs/prerequisites/etcd/</link>
+      <link>https://docs.ondat.io/v2.1/docs/prerequisites/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ondat.github.io/v2.1/docs/prerequisites/etcd/</guid>
+      <guid>https://docs.ondat.io/v2.1/docs/prerequisites/etcd/</guid>
       <description>
         
         
         &lt;p&gt;Ondat requires an etcd cluster in order to function. For more information
-on why etcd is required please see our &lt;a href=&#34;https://ondat.github.io/v2.1/docs/concepts/etcd/&#34;&gt;etcd concepts&lt;/a&gt; page.&lt;/p&gt;
+on why etcd is required please see our &lt;a href=&#34;https://docs.ondat.io/v2.1/docs/concepts/etcd/&#34;&gt;etcd concepts&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;We do not support using the Kubernetes etcd for Ondat installations.&lt;/p&gt;
 &lt;p&gt;We provide two methods for installing etcd. For those looking for a quick route
 to evaluating Ondat, our first method installs etcd into your Kubernetes
@@ -331,7 +331,7 @@ after a failure of etcd, contact the Ondat support team.&lt;/p&gt;
 &lt;p&gt;For a one command install, the following script uses &lt;code&gt;kubectl&lt;/code&gt; to create an
 etcd cluster in the &lt;code&gt;storageos-etcd&lt;/code&gt; namespace. It requires kubectl in the
 system path, and the context set to the appropriate cluster.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s https://ondat.github.io/v2.1/sh/deploy-etcd.sh &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; bash
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -s https://docs.ondat.io/v2.1/sh/deploy-etcd.sh &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installation-step-by-step&#34;&gt;Installation Step by Step&lt;/h3&gt;
 &lt;p&gt;For those who would prefer to execute the steps by themselves, they are as
 follows:&lt;/p&gt;
@@ -686,7 +686,7 @@ $ &lt;span style=&#34;color:#000&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span style=
 17e7256953f9319b, started, etcd-gjr25s4sdr, http://172.28.0.2:2380, http://172.28.0.2:2379
 8b698843a4658823, started, etcd-rqdf9thx5p, http://172.28.0.3:2380, http://172.28.0.3:2379
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href=&#34;https://ondat.github.io/v2.1/docs/operations/etcd/&#34;&gt;etcd operations&lt;/a&gt;
+&lt;p&gt;Read the &lt;a href=&#34;https://docs.ondat.io/v2.1/docs/operations/etcd/&#34;&gt;etcd operations&lt;/a&gt;
 page for our etcd recommendations.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -806,7 +806,7 @@ of etcd from Prometheus easier.&lt;/p&gt;
 &lt;h2 id=&#34;using-etcd-with-ondat&#34;&gt;Using Etcd with Ondat&lt;/h2&gt;
 &lt;p&gt;During installation of Ondat the &lt;code&gt;kvBackend.address&lt;/code&gt; parameter of the Ondat
 operator is used to specify the address of the etcd cluster. See the
-&lt;a href=&#34;https://ondat.github.io/v2.1/docs/reference/cluster-operator/examples/#installing-with-an-external-etcd&#34;&gt;Ondat cluster operator configuration&lt;/a&gt; examples for more information.&lt;/p&gt;
+&lt;a href=&#34;https://docs.ondat.io/v2.1/docs/reference/cluster-operator/examples/#installing-with-an-external-etcd&#34;&gt;Ondat cluster operator configuration&lt;/a&gt; examples for more information.&lt;/p&gt;
 
       </description>
     </item>

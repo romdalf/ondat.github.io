@@ -24,7 +24,7 @@
 <meta property="og:description" content="Ondat replicates volumes across nodes for data protection and high availability. Synchronous replication ensures strong consistency for applications such as databases and Elasticsearch, incurring one network round trip on writes.
 The basic model for Ondat replication is of a master volume with distributed replicas. Each volume can be replicated between 0 and 5 times, which are provisioned to 0 to 5 nodes, up to the number of remaining nodes in the cluster." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2/docs/concepts/replication/" />
+<meta property="og:url" content="https://docs.ondat.io/v2/docs/concepts/replication/" />
 
 <meta itemprop="name" content="Replication">
 <meta itemprop="description" content="Ondat replicates volumes across nodes for data protection and high availability. Synchronous replication ensures strong consistency for applications such as databases and Elasticsearch, incurring one network round trip on writes.
@@ -1079,21 +1079,21 @@ The basic model for Ondat replication is of a master volume with distributed rep
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/v2/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2/docs/concepts/replication/">Replication</a>
+	<a href="https://docs.ondat.io/v2/docs/concepts/replication/">Replication</a>
 </li>
 
 	</ol>
@@ -1135,7 +1135,7 @@ begin to sync. Should the former master come back online it will be demoted to
 a replica and the replica will the smallest difference to the current master
 will be kept.</p>
 <p>While the replica count is controllable on a per-volume basis, some
-environments may prefer to set <a href="https://ondat.github.io/v2/docs/reference/labels/#storageos-storageclass-labels">default labels on the StorageClass</a>.</p>
+environments may prefer to set <a href="https://docs.ondat.io/v2/docs/reference/labels/#storageos-storageclass-labels">default labels on the StorageClass</a>.</p>
 <h3 id="delta-sync">Delta Sync</h3>
 <p>Ondat implements a delta sync between a volume master and its replicas.
 This means that if a replica for a volume goes offline, that when the replica

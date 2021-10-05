@@ -24,7 +24,7 @@
 <meta property="og:description" content="Apache Kafka with Ondat Kafka is a popular stream processing platform combining features from pub/sub and traditional queues.
 Using Ondat persistent volumes with Apache Kafka means that if a pod fails, the cluster is only in a degraded state for as long as it takes Kubernetes to restart the pod. When the pod comes back up, the pod data is immediately available. Should Kubernetes schedule the kafka pod on a new node, Ondat allows for the data to be available to the pod, irrespective of whether or not the original Ondat master volume is located on the same node." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.1/docs/usecases/kafka/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.1/docs/usecases/kafka/" />
 
 <meta itemprop="name" content="Kafka">
 <meta itemprop="description" content="Apache Kafka with Ondat Kafka is a popular stream processing platform combining features from pub/sub and traditional queues.
@@ -142,7 +142,7 @@ Using Ondat persistent volumes with Apache Kafka means that if a pod fails, the 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ Using Ondat persistent volumes with Apache Kafka means that if a pod fails, the 
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.1/offline-search-index.20ac0d14c3a33c6d09a09fed03a85bd0951030bd26812684bd6343e2832967f75d2eb38bc994fc5cff8344e52bdbba4a225f2248b16aeb18ceec23c003941230.json"
+  data-offline-search-index-json-src="/v2.1/offline-search-index.53b303f56d4e7e665f7a8326d02b46d87c3baa8989b2ed1b2ee0719d24320770a4f8c0b6c1da6db49bf61abddc41472b2caaab6d3900b0d6a117d57a1dc0ff75.json"
   data-offline-search-base-href="/"
 >
 
@@ -1091,21 +1091,21 @@ Using Ondat persistent volumes with Apache Kafka means that if a pod fails, the 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.1/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.1/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.1/docs/usecases/">Use Cases</a>
+	<a href="https://docs.ondat.io/v2.1/docs/usecases/">Use Cases</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.1/docs/usecases/kafka/">Kafka</a>
+	<a href="https://docs.ondat.io/v2.1/docs/usecases/kafka/">Kafka</a>
 </li>
 
 	</ol>
@@ -1129,16 +1129,16 @@ is located on the same node.</p>
 consideration of whether to allow Ondat or Kafka to handle replication
 is required.</p>
 <p>Before you start, ensure you have Ondat installed and ready on a Kubernetes
-cluster. <a href="https://ondat.github.io/v2.1/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
+cluster. <a href="https://docs.ondat.io/v2.1/docs/install/kubernetes/">See our guide on how to install Ondat on Kubernetes for more
 information</a>.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Apache Zookeeper is required by Kafka to function; we assume it to already
 exist and be accessible within the Kubernetes cluster as <code>zookeeper</code>, see how
 to run Zookeeper with Ondat
-<a href="https://ondat.github.io/v2.1/docs/usecases/zookeeper/">here</a></li>
+<a href="https://docs.ondat.io/v2.1/docs/usecases/zookeeper/">here</a></li>
 <li>Ondat is assumed to have been installed; please check for the latest
-available version <a href="https://ondat.github.io/v2.1/docs/reference/release_notes/">here</a></li>
+available version <a href="https://docs.ondat.io/v2.1/docs/reference/release_notes/">here</a></li>
 <li>Kafka pods require 1536 MB of memory for successful scheduling</li>
 </ul>
 <h3 id="helm">Helm</h3>

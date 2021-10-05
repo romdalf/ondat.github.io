@@ -25,7 +25,7 @@
 Data-in-transit is data as it is travelling between nodes. It is encrypted by default with mTLS. Data-at-rest is the data stored in your volumes as blob files. Encryption of these blob files is optional and can be enabled by adding a label to your volume definitions before they&rsquo;re provisioned.
 For information on how to enable encryption on your volumes, please see our Encryption Operations page." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/docs/reference/encryption/" />
+<meta property="og:url" content="https://docs.ondat.io/docs/reference/encryption/" />
 
 <meta itemprop="name" content="Encryption">
 <meta itemprop="description" content="Ondat supports encryption for data-at-rest and data-in-transit.
@@ -145,7 +145,7 @@ For information on how to enable encryption on your volumes, please see our Encr
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -293,7 +293,7 @@ For information on how to enable encryption on your volumes, please see our Encr
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -1300,21 +1300,21 @@ For information on how to enable encryption on your volumes, please see our Encr
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/reference/">Reference</a>
+	<a href="https://docs.ondat.io/docs/reference/">Reference</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/docs/reference/encryption/">Encryption</a>
+	<a href="https://docs.ondat.io/docs/reference/encryption/">Encryption</a>
 </li>
 
 	</ol>
@@ -1326,12 +1326,12 @@ For information on how to enable encryption on your volumes, please see our Encr
 	
 	<p>Ondat supports encryption for data-at-rest and data-in-transit.</p>
 <p>Data-in-transit is data as it is travelling between nodes. It is encrypted by
-default with mTLS. Data-at-rest is the data stored in your volumes as <a href="https://ondat.github.io/docs/concepts/volumes/"> blob
+default with mTLS. Data-at-rest is the data stored in your volumes as <a href="https://docs.ondat.io/docs/concepts/volumes/"> blob
 files</a>. Encryption of these blob files
 is optional and can be enabled by adding a label to your volume definitions
 before they&rsquo;re provisioned.</p>
 <p>For information on how to enable encryption on your volumes, please see our
-<a href="https://ondat.github.io/docs/operations/encryption/">Encryption Operations</a> page.</p>
+<a href="https://docs.ondat.io/docs/operations/encryption/">Encryption Operations</a> page.</p>
 <h2 id="how-volumes-are-encrypted">How volumes are encrypted</h2>
 <p>Volumes are encrypted using AES-256 in the XTS-AES mode with 512-bit keys, as
 specified by IEEE Standard 1619-2007. There is a non-zero performance impact of
@@ -1339,7 +1339,7 @@ using encrypted volumes. A 10-25% cost in read/write throughput can be
 expected from XTS-AES, dependent on workload. Thin provisioning still applies
 to encrypted volumes.</p>
 <h2 id="encryption-key-generation">Encryption Key Generation</h2>
-<p>On PVC creation, <a href="https://ondat.github.io/docs/reference/labels/#storageos-volume-labels">if encryption is enabled</a>, Ondat will
+<p>On PVC creation, <a href="https://docs.ondat.io/docs/reference/labels/#storageos-volume-labels">if encryption is enabled</a>, Ondat will
 automatically generate up to two keys as Kubernetes secrets. Both keys are
 stored in the same namespace as the PVC.</p>
 <p>Firstly, if it doesn&rsquo;t already exist, a namespace key is generated. It is

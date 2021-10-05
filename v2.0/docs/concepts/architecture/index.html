@@ -25,7 +25,7 @@
 Fundamentally, Ondat uses the storage attached to the nodes in the Ondat cluster to create and present virtual volumes into containers. Space on the host is consumed from the mount point /var/lib/storageos/data, so it is therefore recommended that disk devices are used exclusively for Ondat, as described in Managing Host Storage 
 Ondat is agnostic to the underlying storage and runs equally well on bare metal, in virtual machines or on cloud providers." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.0/docs/concepts/architecture/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.0/docs/concepts/architecture/" />
 
 <meta itemprop="name" content="Architecture">
 <meta itemprop="description" content="Ondat is a software-defined storage platform for running stateful applications in Kubernetes.
@@ -1082,21 +1082,21 @@ Ondat is agnostic to the underlying storage and runs equally well on bare metal,
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.0/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.0/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.0/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/v2.0/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.0/docs/concepts/architecture/">Architecture</a>
+	<a href="https://docs.ondat.io/v2.0/docs/concepts/architecture/">Architecture</a>
 </li>
 
 	</ol>
@@ -1112,7 +1112,7 @@ applications in Kubernetes.</p>
 Ondat cluster to create and present virtual volumes into containers. Space
 on the host is consumed from the mount point <code>/var/lib/storageos/data</code>, so it
 is therefore recommended that disk devices are used exclusively for Ondat,
-as described in <a href="https://ondat.github.io/v2.0/docs/operations/managing-host-storage/">Managing Host Storage </a></p>
+as described in <a href="https://docs.ondat.io/v2.0/docs/operations/managing-host-storage/">Managing Host Storage </a></p>
 <p>Ondat is agnostic to the underlying storage and runs equally well on
 bare metal, in virtual machines or on cloud providers.</p>
 <p><img src="/images/docs/concepts/storageos-cluster.png" alt="Ondat architecture"></p>
@@ -1150,7 +1150,7 @@ storage. The scheduler, CSI helper and Operator run as separate pods and are
 controlled as deployments.</p>
 <p>Ondat is designed to feel familiar to Kubernetes and Docker users. Storage
 is managed through standard StorageClasses and PersistentVolumeClaims, and
-<a href="https://ondat.github.io/v2.0/docs/reference/labels/">features</a> are controlled by
+<a href="https://docs.ondat.io/v2.0/docs/reference/labels/">features</a> are controlled by
 Kubernetes-style labels and selectors, prefixed with <code>storageos.com/</code>. By
 default, volumes are cached to improve read performance and compressed to
 reduce network traffic.</p>

@@ -25,7 +25,7 @@
  Rancher Catalogue - this is the easiest and requires just a few clicks Manual - allowing more control and visibility  Before proceeding, ensure that you have followed our prerequisites. On Rancher, pay particular attention to the OS version and image used - some platforms require extra mainline kernel modules to be enabled.
  Catalog Manual    Catalog Install Ondat is a Certified application in the Rancher Catalog." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/docs/install/rancher/" />
+<meta property="og:url" content="https://docs.ondat.io/docs/install/rancher/" />
 
 <meta itemprop="name" content="Rancher">
 <meta itemprop="description" content="Ondat is a certified Rancher application. We offer two installation methods:
@@ -145,7 +145,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -293,7 +293,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d58e388e7f5a2900fd34b501411ef779624a344d46f0d1442aca60e475de846b404eeeb082c4aa7375d0ea9b9e19e470c10ce197a00f310c45c1a3e18eface3.json"
+  data-offline-search-index-json-src="/offline-search-index.ec4a573f42503118adcff3713954f526d47d058fcdbf69580cca03f1334fe9bba0b21712755f5e7ec81b72f7aa0c797db333753088dab938a59a3b83d1e10d52.json"
   data-offline-search-base-href="/"
 >
 
@@ -1290,21 +1290,21 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/docs/install/">Install</a>
+	<a href="https://docs.ondat.io/docs/install/">Install</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/docs/install/rancher/">Rancher</a>
+	<a href="https://docs.ondat.io/docs/install/rancher/">Rancher</a>
 </li>
 
 	</ol>
@@ -1320,7 +1320,7 @@ methods:</p>
 <li>Rancher Catalogue - this is the easiest and requires just a few clicks</li>
 <li>Manual - allowing more control and visibility</li>
 </ul>
-<p>Before proceeding, ensure that you have followed our <a href="https://ondat.github.io/docs/prerequisites/">prerequisites</a>. On Rancher, pay particular attention to
+<p>Before proceeding, ensure that you have followed our <a href="https://docs.ondat.io/docs/prerequisites/">prerequisites</a>. On Rancher, pay particular attention to
 the OS version and image used - some platforms require extra mainline kernel
 modules to be enabled.</p>
 <nav>
@@ -1382,8 +1382,8 @@ modules to be enabled.</p>
 Catalog</a>. You can install
 Ondat using the Rancher application install.</p>
 <p>Before completing the steps below, you will need an etcd cluster. For
-evaluation use our simple <a href="https://ondat.github.io/docs/prerequisites/etcd/#testing">test</a> recipe.
-For production installations, follow our <a href="https://ondat.github.io/docs/prerequisites/etcd/#production">production</a> recipe. Make a note of the etcd endpoint URL in either case.</p>
+evaluation use our simple <a href="https://docs.ondat.io/docs/prerequisites/etcd/#testing">test</a> recipe.
+For production installations, follow our <a href="https://docs.ondat.io/docs/prerequisites/etcd/#production">production</a> recipe. Make a note of the etcd endpoint URL in either case.</p>
 <ol>
 <li>
 <p>Select the <code>System</code> project of your cluster</p>
@@ -1405,9 +1405,9 @@ DaemonSet.</p>
 the form. Be sure to check the etcd address and ensure it matches the value
 you noted at the beginning of this guide.</p>
 <p>The catalog form exposes several useful parameters - documented
-<a href="https://ondat.github.io/docs/install/rancher/#simplecustomization">below</a>.</p>
+<a href="https://docs.ondat.io/docs/install/rancher/#simplecustomization">below</a>.</p>
 <p>For further customization, you can opt to set the option to &lsquo;Install
-Ondat Cluster&rsquo; to false and install a custom CR. See <a href="https://ondat.github.io/docs/install/rancher/#advancedcustomization">below</a> for this.</p>
+Ondat Cluster&rsquo; to false and install a custom CR. See <a href="https://docs.ondat.io/docs/install/rancher/#advancedcustomization">below</a> for this.</p>
 <p><img src="/images/rancher-ui-v2/rancher-4.png" alt="install-4"></p>
 </li>
 <li>
@@ -1427,7 +1427,7 @@ For convenience, it is often easiest to port forward the service using the
 following kubectl incantation (this will block, so a second terminal window may
 be advisable):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl port-forward -n kube-system svc/storageos <span style="color:#0000cf;font-weight:bold">5705</span>
-</code></pre></div><p>Now follow the instructions on our <a href="https://ondat.github.io/docs/operations/licensing/">licensing operations</a> page to obtain and apply a license.</p>
+</code></pre></div><p>Now follow the instructions on our <a href="https://docs.ondat.io/docs/operations/licensing/">licensing operations</a> page to obtain and apply a license.</p>
 <p>Installation of Ondat is now complete.</p>
 </li>
 </ol>
@@ -1439,7 +1439,7 @@ customization of the Ondat installation.</p>
 <img src="/images/rancher-ui-v2/rancher-7.png" alt="install-7"></p>
 <ul>
 <li><strong>Cluster Operator namespace</strong>
-: The Kubernetes namespace where the <a href="https://ondat.github.io/docs/reference/cluster-operator/">Ondat Cluster Operator</a> and other resources will be
+: The Kubernetes namespace where the <a href="https://docs.ondat.io/docs/reference/cluster-operator/">Ondat Cluster Operator</a> and other resources will be
 created.</li>
 <li><strong>Container Images</strong> : By default images are pulled from DockerHub, you can</li>
 <li>specify the image URLs
@@ -1448,7 +1448,7 @@ when using private registries.</li>
 : Controls the automatic deployment of Ondat after installing the Cluster
 Operator. If set to <code>false</code>, the Operator will be created, but a Custom Resource will
 not be applied to the cluster. Launch the operator and proceed to the section
-<a href="https://ondat.github.io/docs/install/rancher/#advancedcustomization">Advanced Customization</a> below.</li>
+<a href="https://docs.ondat.io/docs/install/rancher/#advancedcustomization">Advanced Customization</a> below.</li>
 <li><strong>Namespace</strong> : The Kubernetes namespace where Ondat will be
 installed. By default, Ondat installs into the <code>kube-system</code> namespace,
 which will add a priority class to ensure high priority resource allocation.
@@ -1459,7 +1459,7 @@ under normal circumstances.</li>
 to be created at Ondat bootstrap. A random password will be generated by
 leaving the field empty or clicking the <code>Generate</code> button.</li>
 <li><strong>External etcd address(es)</strong> : Connection and configuration details for an
-external Etcd cluster.See our documentation <a href="https://ondat.github.io/docs/prerequisites/etcd/">here</a>.</li>
+external Etcd cluster.See our documentation <a href="https://docs.ondat.io/docs/prerequisites/etcd/">here</a>.</li>
 <li><strong>Node Selectors and Tolerations</strong>
 : Control placement of Ondat DaemonSet Pods. Ondat will only be
 installed on the selected nodes.</li>
@@ -1529,12 +1529,12 @@ spec:
         values:
         - <span style="color:#4e9a06">&#34;true&#34;</span>
 </code></pre></div><blockquote>
-<p>Additional <code>spec</code> parameters are available on the <a href="https://ondat.github.io/docs/reference/cluster-operator/configuration/">Cluster Operator
+<p>Additional <code>spec</code> parameters are available on the <a href="https://docs.ondat.io/docs/reference/cluster-operator/configuration/">Cluster Operator
 configuration</a> page.</p>
 </blockquote>
 <blockquote>
 <p>You can find more examples such as deployments referencing a external
-etcd kv store for Ondat in the <a href="https://ondat.github.io/docs/reference/cluster-operator/examples/">Cluster Operator examples</a> page.</p>
+etcd kv store for Ondat in the <a href="https://docs.ondat.io/docs/reference/cluster-operator/examples/">Cluster Operator examples</a> page.</p>
 </blockquote>
 </li>
 </ol>
@@ -1650,13 +1650,13 @@ spec:
 <span style="color:#8f5902;font-style:italic">#        values:</span>
 <span style="color:#8f5902;font-style:italic">#        - &#34;true&#34;</span>
 </code></pre></div><blockquote>
-<p>Additional <code>spec</code> parameters are available on the <a href="https://ondat.github.io/docs/reference/cluster-operator/configuration/">Cluster Operator
+<p>Additional <code>spec</code> parameters are available on the <a href="https://docs.ondat.io/docs/reference/cluster-operator/configuration/">Cluster Operator
 configuration</a>
 page.</p>
 </blockquote>
 <blockquote>
 <p>You can find more examples such as deployments referencing a external etcd kv
-store for Ondat in the <a href="https://ondat.github.io/docs/reference/cluster-operator/examples/">Cluster Operator examples</a> page.</p>
+store for Ondat in the <a href="https://docs.ondat.io/docs/reference/cluster-operator/examples/">Cluster Operator examples</a> page.</p>
 </blockquote>
 <h3 id="verify-ondat-installation">Verify Ondat Installation</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ce5c00;font-weight:bold">[</span>root@master03<span style="color:#ce5c00;font-weight:bold">]</span><span style="color:#8f5902;font-style:italic"># kubectl -n kube-system get pods -w</span>
@@ -1674,7 +1674,7 @@ Phase.</p>
 <h2 id="4-license-cluster">4. License cluster</h2>
 <p>Newly installed Ondat clusters must be licensed within 24 hours. Our
 developer license is free, and supports up to 5TiB of provisioned storage.</p>
-<p>To obtain a license, follow the instructions on our <a href="https://ondat.github.io/docs/operations/licensing/">licensing operations
+<p>To obtain a license, follow the instructions on our <a href="https://docs.ondat.io/docs/operations/licensing/">licensing operations
 </a> page.</p>
 
 </div>
@@ -1686,7 +1686,7 @@ developer license is free, and supports up to 5TiB of provisioned storage.</p>
 </div>
 
 <h2 id="first-ondat-volume">First Ondat volume</h2>
-<p>If this is your first installation you may wish to follow the <a href="https://ondat.github.io/docs/operations/firstpvc/">Ondat
+<p>If this is your first installation you may wish to follow the <a href="https://docs.ondat.io/docs/operations/firstpvc/">Ondat
 Volume guide</a> for an example of how
 to mount a Ondat volume in a Pod.</p>
 

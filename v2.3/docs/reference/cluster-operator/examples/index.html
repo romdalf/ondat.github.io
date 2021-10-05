@@ -24,7 +24,7 @@
 <meta property="og:description" content="Before deploying a Ondat cluster, create a Secret to define the Ondat API Username and Password in base64 encoding.
 kubectl create -f - &lt;&lt;END apiVersion: v1 kind: Secret metadata: name: &#34;storageos-api&#34; namespace: &#34;default&#34; labels: app: &#34;storageos&#34; type: &#34;kubernetes.io/storageos&#34; data: apiUsername: c3RvcmFnZW9z apiPassword: c3RvcmFnZW9z # CSI Credentials csiProvisionUsername: c3RvcmFnZW9z csiProvisionPassword: c3RvcmFnZW9z csiControllerPublishUsername: c3RvcmFnZW9z csiControllerPublishPassword: c3RvcmFnZW9z csiNodePublishUsername: c3RvcmFnZW9z csiNodePublishPassword: c3RvcmFnZW9z csiControllerExpandUsername: c3RvcmFnZW9z csiControllerExpandPassword: c3RvcmFnZW9z END This example contains a default password, for production installations, use a unique, strong password." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2.3/docs/reference/cluster-operator/examples/" />
+<meta property="og:url" content="https://docs.ondat.io/v2.3/docs/reference/cluster-operator/examples/" />
 
 <meta itemprop="name" content="Cluster Operator examples">
 <meta itemprop="description" content="Before deploying a Ondat cluster, create a Secret to define the Ondat API Username and Password in base64 encoding.
@@ -142,7 +142,7 @@ kubectl create -f - &lt;&lt;END apiVersion: v1 kind: Secret metadata: name: &#34
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.3/offline-search-index.815d3640034ddb72017c4477a19f371bfc308d43c819e3689b159c5f8bfd8216d395ea51bca99f210a70efb1e705d52bc29910e868bb4e812c9d4988f2ab6a48.json"
+  data-offline-search-index-json-src="/v2.3/offline-search-index.4e34bd2a0a9920e6e197b4a2de0b8518ef23d27907a62a8d1e8aa1fa658905a213ea8ac13b4d010918db3bbbb0c7cd7fceb249e3f26103605030da451c4bc733.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ kubectl create -f - &lt;&lt;END apiVersion: v1 kind: Secret metadata: name: &#34
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v2.3/offline-search-index.815d3640034ddb72017c4477a19f371bfc308d43c819e3689b159c5f8bfd8216d395ea51bca99f210a70efb1e705d52bc29910e868bb4e812c9d4988f2ab6a48.json"
+  data-offline-search-index-json-src="/v2.3/offline-search-index.4e34bd2a0a9920e6e197b4a2de0b8518ef23d27907a62a8d1e8aa1fa658905a213ea8ac13b4d010918db3bbbb0c7cd7fceb249e3f26103605030da451c4bc733.json"
   data-offline-search-base-href="/"
 >
 
@@ -1200,28 +1200,28 @@ kubectl create -f - &lt;&lt;END apiVersion: v1 kind: Secret metadata: name: &#34
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.3/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2.3/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.3/docs/reference/">Reference</a>
+	<a href="https://docs.ondat.io/v2.3/docs/reference/">Reference</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2.3/docs/reference/cluster-operator/">Cluster Operator</a>
+	<a href="https://docs.ondat.io/v2.3/docs/reference/cluster-operator/">Cluster Operator</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2.3/docs/reference/cluster-operator/examples/">Examples</a>
+	<a href="https://docs.ondat.io/v2.3/docs/reference/cluster-operator/examples/">Examples</a>
 </li>
 
 	</ol>
@@ -1292,7 +1292,7 @@ certificates with the following parameters:</p>
 </span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#8f5902;font-style:italic"># External mTLS secured etcd cluster specific properties</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">tlsEtcdSecretRefName</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;etcd-client-tls&#34;</span><span style="color:#f8f8f8;text-decoration:underline">                          </span><span style="color:#8f5902;font-style:italic"># Secret containing etcd client certificates</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">tlsEtcdSecretRefNamespace</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;storageos-etcd&#34;</span><span style="color:#f8f8f8;text-decoration:underline">                      </span><span style="color:#8f5902;font-style:italic"># Namespace of the client certificates secret</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></code></pre></div><p>Follow the <a href="https://ondat.github.io/v2.3/docs/operations/etcd/storageos-secret-info/">etcd operations</a> page to setup the
+</span></code></pre></div><p>Follow the <a href="https://docs.ondat.io/v2.3/docs/operations/etcd/storageos-secret-info/">etcd operations</a> page to setup the
 secret with the Etcd client certificate, client key and CA.</p>
 <h2 id="installing-to-a-subset-of-nodes">Installing to a subset of nodes</h2>
 <p>In this case we select nodes that are workers. To make sure that Ondat doesn&rsquo;t start in Master nodes.</p>

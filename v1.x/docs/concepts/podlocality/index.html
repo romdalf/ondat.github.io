@@ -24,7 +24,7 @@
 <meta property="og:description" content="Ondat has the capacity to influence Kubernetes Pod placement decisions to ensure that Pods are scheduled on the same nodes as their data. This functionality is known as Pod Locality.
 Ondat grants access to data by presenting, on local or remote nodes, the devices used in a Pod&rsquo;s VolumeMounts. However, it is often the case that it is required or preferred to place the Pod on the node where the Ondat Primary Volume is located, because IO operations are fastest as a result of minimized network traffic and associated latency." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v1.x/docs/concepts/podlocality/" />
+<meta property="og:url" content="https://docs.ondat.io/v1.x/docs/concepts/podlocality/" />
 
 <meta itemprop="name" content="Pod Placement">
 <meta itemprop="description" content="Ondat has the capacity to influence Kubernetes Pod placement decisions to ensure that Pods are scheduled on the same nodes as their data. This functionality is known as Pod Locality.
@@ -142,7 +142,7 @@ Ondat grants access to data by presenting, on local or remote nodes, the devices
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v1.x/offline-search-index.dd541beb70815078978276c1c1cc979a2f61de84240029223258e66acd90a4a73fad6da816c10ac3ff26f750139b40061ce1a00a8566c2934e92cf2803cf4c5a.json"
+  data-offline-search-index-json-src="/v1.x/offline-search-index.7d3c4919bde3be16493f86e8a3a781c63ba3b323e3f7afdd20b0c639e17a5a6683f90683bbecca534e049ae4ece2ce81d4b75b988686211b100e6c1c2ed50c5c.json"
   data-offline-search-base-href="/"
 >
 
@@ -290,7 +290,7 @@ Ondat grants access to data by presenting, on local or remote nodes, the devices
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/v1.x/offline-search-index.dd541beb70815078978276c1c1cc979a2f61de84240029223258e66acd90a4a73fad6da816c10ac3ff26f750139b40061ce1a00a8566c2934e92cf2803cf4c5a.json"
+  data-offline-search-index-json-src="/v1.x/offline-search-index.7d3c4919bde3be16493f86e8a3a781c63ba3b323e3f7afdd20b0c639e17a5a6683f90683bbecca534e049ae4ece2ce81d4b75b988686211b100e6c1c2ed50c5c.json"
   data-offline-search-base-href="/"
 >
 
@@ -1233,21 +1233,21 @@ Ondat grants access to data by presenting, on local or remote nodes, the devices
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v1.x/docs/">Documentation V1</a>
+	<a href="https://docs.ondat.io/v1.x/docs/">Documentation V1</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v1.x/docs/concepts/">Concepts</a>
+	<a href="https://docs.ondat.io/v1.x/docs/concepts/">Concepts</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v1.x/docs/concepts/podlocality/">Podlocality</a>
+	<a href="https://docs.ondat.io/v1.x/docs/concepts/podlocality/">Podlocality</a>
 </li>
 
 	</ol>
@@ -1267,7 +1267,7 @@ Volume is located, because IO operations are fastest as a result of minimized
 network traffic and associated latency. Read operations are served locally and
 writes require fewer round trips to the replicas of the volume.</p>
 <p>Ondat automatically enables the use of a custom scheduler for any Pod
-using Ondat Volumes. Checkout the <a href="https://ondat.github.io/v1.x/docs/reference/scheduler/admission-controller/">Admission Controller reference</a> for more
+using Ondat Volumes. Checkout the <a href="https://docs.ondat.io/v1.x/docs/reference/scheduler/admission-controller/">Admission Controller reference</a> for more
 information.</p>
 <h2 id="locality-modes">Locality modes</h2>
 <p>There are two modes available to set pod locality for Ondat Volumes.</p>
@@ -1288,7 +1288,7 @@ application and data is essential.</p>
 <p>For instance, when running Kafka Pods under heavy load, it may be better to
 avoid scheduling a Pod using a remote volume rather than have clients
 direct traffic at a cluster member which exhibits degraded performance.</p>
-<p>To see examples on how to set a mode for your Pods, check out the <a href="https://ondat.github.io/v1.x/docs/reference/scheduler/examples/">examples
+<p>To see examples on how to set a mode for your Pods, check out the <a href="https://docs.ondat.io/v1.x/docs/reference/scheduler/examples/">examples
 reference page</a>.</p>
 <h2 id="storageos-kubernetes-scheduler">Storageos Kubernetes Scheduler</h2>
 <p>Ondat achieves Pod locality by implementing a Kubernetes scheduler
@@ -1348,7 +1348,7 @@ fulfill the following prerequisites:</p>
 controller</a>
 that ensures any Pod using Ondat Volumes are scheduled by the Ondat
 Scheduler. This makes the use of the scheduler transparent to the user. To learn how to alter this behaviour, see
-<a href="https://ondat.github.io/v1.x/docs/reference/scheduler/admission-controller/">reference page</a>.</p>
+<a href="https://docs.ondat.io/v1.x/docs/reference/scheduler/admission-controller/">reference page</a>.</p>
 <p>The Admission Controller is based on admission webhooks. Therefore, no custom
 admission plugins need to be enabled at bootstrap of your Kubernetes cluster.
 Admission webhooks are HTTP callbacks that receive admission requests and do

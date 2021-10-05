@@ -24,7 +24,7 @@
 <meta property="og:description" content="Ondat V2 is built from the knowledge and experience of running stateful production workloads in the fast changing container world.
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ondat.github.io/v2/docs/introduction/overview/" />
+<meta property="og:url" content="https://docs.ondat.io/v2/docs/introduction/overview/" />
 
 <meta itemprop="name" content="What is Ondat V2">
 <meta itemprop="description" content="Ondat V2 is built from the knowledge and experience of running stateful production workloads in the fast changing container world.
@@ -1079,21 +1079,21 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/">Documentation V2</a>
+	<a href="https://docs.ondat.io/v2/docs/">Documentation V2</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://ondat.github.io/v2/docs/introduction/">Introduction</a>
+	<a href="https://docs.ondat.io/v2/docs/introduction/">Introduction</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://ondat.github.io/v2/docs/introduction/overview/">Ondat V2 Overview</a>
+	<a href="https://docs.ondat.io/v2/docs/introduction/overview/">Ondat V2 Overview</a>
 </li>
 
 	</ol>
@@ -1158,7 +1158,7 @@ your cluster, and we&rsquo;ll output in json by default, for easy ingestion into
 aggregators such as Elasticsearch.</p>
 <h2 id="upgraded-data-plane">Upgraded Data Plane</h2>
 <p>Not to be outdone, our data plane contains some significant improvements.</p>
-<p>Firstly, we&rsquo;ve completely re-written our sync algorithm (see <a href="https://ondat.github.io/v2/docs/concepts/volumes/">Delta Sync</a>, used when seeding or catching up replicas
+<p>Firstly, we&rsquo;ve completely re-written our sync algorithm (see <a href="https://docs.ondat.io/v2/docs/concepts/volumes/">Delta Sync</a>, used when seeding or catching up replicas
 that have been offline or partitioned. Our new algorithm uses a <a href="https://en.wikipedia.org/wiki/Hash_list">Hash
 List</a> to sync only changed sections of
 a volume (similar in some ways to what rsync does). Ondat maintains these
